@@ -1,0 +1,92 @@
+  @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  color: white;
+  background-color: #1d1d1dfa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 10px 0 rgba(20, 18, 20, 0.5);
+}
+
+.titulo-container {
+  display: flex;
+  align-items: center;
+}
+
+.titulo-pagina {
+  margin-right: 20px;
+  padding-left: 40px;
+  font-size: 20px;
+  font-family: 'Sonsie One', cursive;
+}
+
+.enlaces {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  padding-right: 60px;
+}
+
+nav a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px 32px;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  padding: 0.1px;
+  background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
+    url(/img/pizza1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  font-size: 80px;
+  text-align: center;
+  margin-top: 250px;
+  margin-left: 350px;
+  margin-right: 350px;
+  color: white;
+  text-shadow: 5px 5px 4px rgba(20, 18, 20, 0.5);
+  border-bottom: 1px solid white;
+}
+
+.card {
+  width: 80%;
+  padding: 40px;
+  margin: 40px auto;
+  border-radius: 5px;
+  box-shadow: 5px 6px 11px 6px rgba(20, 18, 20, 0.5);
+  font-size: 20px;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+  display: column;
+}
+
+.card h2 {
+  padding: 10px;
+}
+
+.contenedor p {
+  padding: 10px;
+}
