@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Sonsie+One&display=swap");
 
 * {
   padding: 0;
@@ -8,8 +8,7 @@
 
 /*Navegador*/
 .nav {
-  color: white;
-  background-color: #1d1d1dfa;
+  background-color: #c2b280;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,16 +19,24 @@
   box-shadow: 0 0 10px 0 rgba(20, 18, 20, 0.5);
 }
 
-.titulo-container {
-  display: flex;
-  align-items: center;
+nav a {
+  text-decoration: none;
+  color: black;
 }
 
 .titulo-pagina {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.titulo-pagina li {
   margin-right: 20px;
   padding-left: 40px;
-  font-size: 20px;
-  font-family: 'Sonsie One', cursive;
+  font-size: 24px;
+  font-family: "Sonsie One", cursive;
+  color: white;
+  text-shadow: 4px 4px 6px rgba(34, 34, 41);
 }
 
 .enlaces {
@@ -39,11 +46,12 @@
   padding-right: 60px;
 }
 
-nav a {
+.enlaces li {
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   text-decoration: none;
-  padding: 15px 32px;
-  color: white;
+  padding: 20px 32px;
+  list-style: none;
 }
 
 /*Encabezado principal*/
@@ -51,28 +59,37 @@ nav a {
   width: 100%;
   height: 100vh;
   padding: 0.1px;
-  background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
-    url(/img/albondigas.jpg);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.albondigas {
+  background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
+    url(/img/albóndigas.jpg);
+}
+
+.pizza {
+    background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
+    url(/img/pizza.jpg);
+}
+
+.pasteldepapas {
+    background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
+    url(/img/pasteldepapas.jpg);
 }
 
 .title {
   font-size: 80px;
   text-align: center;
   margin-top: 250px;
-  margin-left: 350px;
-  margin-right: 350px;
   color: white;
   text-shadow: 5px 5px 4px rgba(20, 18, 20, 0.5);
-  border-bottom: 1px solid white;
 }
 
 /*Contenido de recetas*/
 .card {
-  width: 80%;
+  width: 90%;
   padding: 40px;
   margin: 40px auto;
   border-radius: 5px;
@@ -83,7 +100,6 @@ nav a {
 .contenedor {
   width: 90%;
   margin: 0 auto;
-  display: column;
 }
 
 .card h2 {

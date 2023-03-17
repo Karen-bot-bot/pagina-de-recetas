@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Sonsie+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+/*Navegador*/
+.nav {
+  background-color: #c2b280;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 10px 0 rgba(20, 18, 20, 0.5);
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.titulo-pagina {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.titulo-pagina li {
+  margin-right: 20px;
+  padding-left: 40px;
+  font-size: 1.5rem;
+  font-family: "Sonsie One", cursive;
+  color: white;
+  text-shadow: 4px 4px 6px rgba(34, 34, 41);
+}
+
+.enlaces {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  padding-right: 60px;
+}
+
+.enlaces li {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  text-decoration: none;
+  padding: 20px 32px;
+  list-style: none;
+}
+
+/*Portada*/
+.header {
+  background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
+    url(/img/portada.jpg);
+  width: 100%;
+  height: 100vh;
+  padding: 0.1px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 250px;
+  color: white;
+  text-shadow: 5px 5px 4px rgba(20, 18, 20, 0.5);
+}
+
+p {
+  text-align: center;
+  font-size: 1.875rem;
+  padding: 10px;
+}
+
+/*contenedores*/
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.fav {
+  font-size: 1.875rem ;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 5px 6px 11px 0 rgba(20, 18, 20, 0.5);
+}
+
+.img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.titulo-receta {
+  padding: 20px;
+  text-align: center;
+}
+
+.ver {
+  display: block;
+  background: SaddleBrown;
+  padding: 13px;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+}
