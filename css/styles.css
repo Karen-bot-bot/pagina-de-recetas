@@ -58,11 +58,14 @@ nav a {
   list-style: none;
 }
 
+.enlaces li:hover {
+  background: rgb(172, 152, 126);
+}
+
 /*Portada*/
 .header {
   background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
     url(/img/portada.jpg);
-  width: 100%;
   height: 100vh;
   padding: 0.1px;
   background-position: center;
@@ -70,30 +73,47 @@ nav a {
   background-attachment: fixed;
 }
 
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden; /*para ocultar algo si se desborda*/
+  margin: auto; /*para que lo centre todo*/
+  padding: 60px 0;
+}
+
+.head {
+  text-align: center;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /*ubica el texto uno debajo del otro, se utiliza junto a flexbox display*/
+  color: white;
+}
+
 .title {
   font-size: 5rem;
-  text-align: center;
-  margin-top: 250px;
-  color: white;
+  margin-bottom: 10px;
   text-shadow: 5px 5px 4px rgba(20, 18, 20, 0.5);
 }
 
 p {
-  text-align: center;
   font-size: 1.875rem;
-  padding: 10px;
 }
 
-/*contenedores*/
+/*Articulos*/
 main {
-  margin-top: 50px;
+  margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .fav {
-  font-size: 1.875rem ;
+  font-size: 1.875rem;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .card {

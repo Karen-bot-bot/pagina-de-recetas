@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 /*Navegador*/
 .nav {
   background-color: #c2b280;
@@ -33,7 +37,7 @@ nav a {
 .titulo-pagina li {
   margin-right: 20px;
   padding-left: 40px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Sonsie One", cursive;
   color: white;
   text-shadow: 4px 4px 6px rgba(34, 34, 41);
@@ -48,20 +52,39 @@ nav a {
 
 .enlaces li {
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: none;
   padding: 20px 32px;
   list-style: none;
 }
 
+.enlaces li:hover {
+  background: rgb(172, 152, 126);
+}
+
 /*Encabezado principal*/
 .header {
-  width: 100%;
   height: 100vh;
   padding: 0.1px;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.head {
+  text-align: center;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /*ubica el texto uno debajo del otro, se utiliza junto a flexbox display*/
+  color: white;
+}
+
+.title {
+  font-size: 5rem;
+  text-shadow: 5px 5px 4px rgba(20, 18, 20, 0.5);
 }
 
 .albondigas {
@@ -70,21 +93,13 @@ nav a {
 }
 
 .pizza {
-    background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
+  background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
     url(/img/pizza.jpg);
 }
 
 .pasteldepapas {
-    background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
+  background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
     url(/img/pasteldepapas.jpg);
-}
-
-.title {
-  font-size: 80px;
-  text-align: center;
-  margin-top: 250px;
-  color: white;
-  text-shadow: 5px 5px 4px rgba(20, 18, 20, 0.5);
 }
 
 /*Contenido de recetas*/
