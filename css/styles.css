@@ -12,20 +12,16 @@ html {
 
 /*Navegador*/
 .nav {
-  background-color: #c2b280;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 0 10px 0 rgba(20, 18, 20, 0.5);
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
+  text-shadow: 0 3px 3px #000;
 }
 
 .titulo-pagina {
@@ -35,7 +31,6 @@ nav a {
 }
 
 .titulo-pagina li {
-  margin-right: 20px;
   padding-left: 40px;
   font-size: 1.5rem;
   font-family: "Sonsie One", cursive;
@@ -47,7 +42,6 @@ nav a {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
-  padding-right: 60px;
 }
 
 .enlaces li {
@@ -58,14 +52,27 @@ nav a {
   list-style: none;
 }
 
-.enlaces li:hover {
-  background: rgb(172, 152, 126);
+.enlaces a::after {
+  content: '';
+  height: 2px;
+  width: 0%;
+  background-color: #fff;
+  display: block;
+  transition: .5s ease-in-out;
+}
+
+.enlaces a:hover::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  display: block;
 }
 
 /*Portada*/
 .header {
-  background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
-    url(/img/portada.jpg);
+  background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
+    url(/img/portada3.jpg);
   height: 100vh;
   padding: 0.1px;
   background-position: center;
@@ -84,7 +91,7 @@ nav a {
 .head {
   text-align: center;
   padding: 0;
-  height: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,33 +103,120 @@ nav a {
   font-size: 5rem;
   margin-bottom: 10px;
   text-shadow: 5px 5px 4px rgba(20, 18, 20, 0.5);
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
 }
 
-p {
+/**Carrusel*/
+/* .carousel{
+  background: rgba(150, 240, 162, 0.479);
+} */
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 5px 6px 11px rgba(22, 22, 26, 0.507);
+  border: none;
+    width: 300px;
+    height: 400px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.651);
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 576px) {
+  .carousel-item {
+    margin-right: 0;
+    /* flex: 0 0 33.333333%; */
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+
+.card .img-wrapper {
+    max-width: 100%;
+    /* height: 13em; */
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    max-height: 100%;
+}
+
+@media (max-width: 577px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+}
+
+.card-title {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.btn-primary {
+  border: none;
+  display: block;
+  background: SaddleBrown;
+  padding: 13px;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover{
+  background-color: #000;
+}
+
+/*Titulo recetas favoritas**/
+.fav {
+  display: flex;
+  justify-content: center;
   font-size: 1.875rem;
+  margin-top: 20px;
 }
 
-/*Articulos*/
-main {
+/*Articulos
+.recetas {
   margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.fav {
-  font-size: 1.875rem;
-  margin-top: 10px;
-  text-align: center;
-}
-
 .card {
   width: 300px;
-  height: 350px;
+  height: 360px;
   margin-bottom: 30px;
-  box-sizing: border-box;
   border-radius: 5px;
   box-shadow: 5px 6px 11px 0 rgba(20, 18, 20, 0.5);
+  overflow: hidden;
+  background: white;
 }
 
 .img {
@@ -133,10 +227,12 @@ main {
 }
 
 .titulo-receta {
-  padding: 20px;
+  padding-top: 30px;
   text-align: center;
+  font-size: 1.25rem;
 }
 
+/*pseudoboton
 .ver {
   display: block;
   background: SaddleBrown;
@@ -145,7 +241,54 @@ main {
   border-radius: 5px;
   width: 150px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
   text-decoration: none;
+  font-size: 1.125rem;
+  cursor: pointer;
 }
+
+.ver:hover {
+  color: black;
+} 
+*/
+
+/*Presentación*/
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  padding-bottom: 0;
+  font-size: 1.25rem;
+  background: rgba(255, 227, 182, 0.822);
+  position: relative;
+}
+
+.present {
+  text-align: center;
+  font-size: 1.875rem;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.copy {
+  /* margin-top: 20px; */
+  margin: 20px;
+  font-size: 1.25rem;
+  width: 70%;
+  text-align: left;
+}
+
+.mujer {
+  width: 25%;
+  height: 360px;
+  object-fit: cover;
+  float: right;
+}
+

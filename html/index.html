@@ -1,63 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mmm delicious!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-    <nav class="nav">
-        <ul class="titulo-pagina">
-            <li><a href="index.html"></a>Mmm delicious!</li>
-        </ul>
-        <ul class="enlaces">
-            <li><a href="/html/index.html">Inicio</a></li>
-            <li><a href="#Recetas">Recetas</a></li>
-            <li><a href="#Contacto">Contacto</a></li>
-        </ul>
-    </nav>
-
     <header class="header">
+        <nav class="nav">
+            <ul class="titulo-pagina">
+                <li><a href="index.html"></a>Mmm delicious!</li>
+            </ul>
+            <ul class="enlaces">
+                <li><a href="/html/index.html">Inicio</a></li>
+                <li><a href="#Recetas">Recetas</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
         <div class="contenedor head">
             <h1 class="title">Bienvenid@ a mi página!</h1>
-            <p>Aquí encontrarás un sinfín de recetas deliciosas</p>
+            <h2>Aquí encontrarás un sinfín de recetas deliciosas</h2>
         </div>
     </header>
 
-    <section class="recets-favs">
-        <h2 class="fav">Mis recetas favoritas</h2>
-    </section>
-
     <main>
-        <article class="card">
-            <img class="img" src="/img/albóndigas.jpg" alt="">
-            <h2 class="titulo-receta">Albóndigas en salsa</h2>
-            <a class="ver" href="/html/albondigas.html" target="_blank">Ver receta</a>
-        </article>
 
-        <article class="card">
-            <img class="img" src="/img/pizza.jpg" alt="">
-            <h2 class="titulo-receta">Pizza Napolitana</h2>
-            <a class="ver" href="/html/pizza.html" target="_blank">Ver receta</a>
-        </article>
+        <div class="subtitulo">
+            <h2 class="fav">Mis últimas recetas</h2>
+        </div>
 
-        <article class="card">
-            <img class="img" src="/img/pasteldepapas.jpg" alt="">
-            <h2 class="titulo-receta">Pastel de papas</h2>
-            <a class="ver" href="/html/pasteldepapas.html" target="_blank">Ver receta</a>
-        </article>
+    <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <div class="img-wrapper"><img src="/img/portada.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 1</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="/img/portada1.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 2</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="/img/portada2.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 3</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="/img/portada3.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 4</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="/img/portada4.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 5</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 6</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 7</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 8</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 9</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-        <article class="card">
-            <img class="img" src="/img/pasteldepapas.jpg" alt="">
-            <h2 class="titulo-receta">Pastel de papas</h2>
-            <a class="ver" href="/html/albondigas.html" target="_blank">Ver receta</a>
-        </article>
+        <section class="presentacion">
+            <h2 class="present">¿Quién soy?</h2>
+            <div class="contenido">
+                <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet explicabo nisi ducimus ea.
+                    Ad
+                    optio perferendis illo deserunt totam ducimus rem eum nam saepe, enim suscipit eaque ipsa magni
+                    cupiditate.
+                    <br>
+                    Esse necessitatibus repellendus commodi voluptatibus nobis tenetur, nisi blanditiis recusandae dicta
+                    cum
+                    fugit nemo magni quas, quam harum quod enim veritatis sequi qui a ipsum facere quisquam aperiam
+                    incidunt.
+                    Est. <br>
+                    Fugit architecto voluptates distinctio beatae, ducimus et, rem quis porro corporis ipsum qui
+                    expedita!
+                    Debitis placeat velit doloribus atque perspiciatis commodi sequi qui reiciendis distinctio, quam,
+                    odit
+                    magnam dignissimos eos! <br>
+                </p>
+                <img class="mujer" src="/img/mujer.png" alt="">
+            </div>
+        </section>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="/js/carrusel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

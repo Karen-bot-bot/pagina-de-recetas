@@ -10,22 +10,23 @@ html {
   font-size: 16px;
 }
 
+body {
+  background: rgb(238, 232, 222);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /*Navegador*/
 .nav {
-  background-color: #c2b280;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 0 10px 0 rgba(20, 18, 20, 0.5);
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
+  text-shadow: 0 3px 3px #000;
 }
 
 .titulo-pagina {
@@ -35,7 +36,6 @@ nav a {
 }
 
 .titulo-pagina li {
-  margin-right: 20px;
   padding-left: 40px;
   font-size: 1.5rem;
   font-family: "Sonsie One", cursive;
@@ -47,7 +47,6 @@ nav a {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
-  padding-right: 60px;
 }
 
 .enlaces li {
@@ -58,8 +57,21 @@ nav a {
   list-style: none;
 }
 
-.enlaces li:hover {
-  background: rgb(172, 152, 126);
+.enlaces a::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #fff;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.enlaces a:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  display: block;
 }
 
 /*Encabezado principal*/
@@ -74,7 +86,7 @@ nav a {
 .head {
   text-align: center;
   padding: 0;
-  height: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,21 +97,28 @@ nav a {
 .title {
   font-size: 5rem;
   text-shadow: 5px 5px 4px rgba(20, 18, 20, 0.5);
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
 }
 
 .albondigas {
-  background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
+  background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
     url(/img/albóndigas.jpg);
 }
 
 .pizza {
-  background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
+  background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
     url(/img/pizza.jpg);
 }
 
 .pasteldepapas {
-  background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
+  background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
     url(/img/pasteldepapas.jpg);
+}
+
+.cheesecake {
+  background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
+    url(/img/cheesecake.jpg);
 }
 
 /*Contenido de recetas*/
@@ -108,8 +127,9 @@ nav a {
   padding: 40px;
   margin: 40px auto;
   border-radius: 5px;
-  box-shadow: 5px 6px 11px 6px rgba(20, 18, 20, 0.5);
-  font-size: 20px;
+  box-shadow: 4px 3px 15px -2px rgba(0, 0, 0, 0.6);
+  font-size: 1.25rem;
+  background: white;
 }
 
 .contenedor {
@@ -118,6 +138,7 @@ nav a {
 }
 
 .card h2 {
+  font-size: 1.5rem;
   padding: 10px;
 }
 
