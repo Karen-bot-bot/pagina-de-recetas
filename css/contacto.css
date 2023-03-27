@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Sonsie+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Navegador*/
+.nav {
+  background-color: #212529;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 3px 3px #000;
+}
+
+.titulo-pagina {
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.titulo-pagina li {
+  font-size: 1.5rem;
+  font-family: "Sonsie One", cursive;
+  color: white;
+  text-shadow: 4px 4px 6px rgb(3, 3, 3);
+  list-style: none;
+}
+
+.enlaces {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.enlaces li {
+  font-size: 1.125rem;
+  text-decoration: none;
+  padding: 20px 32px;
+  list-style: none;
+}
+
+/**Border bottom animado*/
+.enlaces a::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #fff;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.enlaces a:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+}
+/**titulo*/
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 20px;
+}
+
+/**Contacto*/
+.container-contacto {
+  display: flex;
+  justify-content: space-between;
+  background: gainsboro;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.title-contacto {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/**Formulario*/
+.form {
+  margin-left: 30px;
+  padding: 0;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  padding: 12px 10px;
+  margin: 0 auto;
+}
+
+textarea {
+  font-size: 1rem;
+  padding: 12px 10px;
+  margin: 0 15px 15px 15px;
+}
+
+input[type="submit"] {
+  width: 200px;
+}
+
+.ubicacion {
+  padding-right: 30px;
+  padding-left: 6px;
+}

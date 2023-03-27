@@ -233,6 +233,7 @@ nav a {
   flex-direction: column;
   align-items: center;
   font-size: 1.25rem;
+  background: beige;
 }
 
 .contenedor-receta {
