@@ -8,6 +8,7 @@
     <title>Mmm delicious!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
@@ -31,136 +32,153 @@
     </header>
 
     <main>
-
         <div class="subtitulo">
-            <h2 class="fav">Mis últimas recetas</h2>
+            <h2 class="title-main">Mis últimas recetas</h2>
+        </div>
+        <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="img-wrapper"><img src="/img/fondo1.jpg"> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Albóndigas en salsa</h5>
+                            <a href="/html/recetas/albondigas.html" class="btn-primary">Ver receta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper"><img src="/img/tiramisu.jpg"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tiramisú</h5>
+                            <a href="/html/recetas/tiramisu.html" class="btn-primary">Ver receta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper"><img src="/img/pasteldepapas.jpg" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pastel de papas</h5>
+                            <a href="/html/recetas/pasteldepapas.html" class="btn-primary">Ver receta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper"><img src="/img/portada3.jpg" class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 4</h5>
+                            <a href="#" class="btn-primary">Ver receta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper"><img src="/img/portada4.jpg" class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 5</h5>
+                            <a href="#" class="btn-primary">Ver receta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 6</h5>
+                            <a href="#" class="btn-primary">Ver receta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 7</h5>
+                            <a href="#" class="btn-primary">Ver receta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 8</h5>
+                            <a href="#" class="btn-primary">Ver receta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 9</h5>
+                            <a href="#" class="btn-primary">Ver receta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <div>
+                <a href="#" class="btn-secondary"><b>Ver todas las recetas</b></a>
+            </div>
         </div>
 
-    <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card">
-                    <div class="img-wrapper"><img src="/img/portada.jpg" class="d-block w-100" alt="..."> </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 1</h5>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p> -->
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+        <section class="recetas-favoritas">
+            <h2 class="title-main">Mis recetas favoritas</h2>
+            <div class="contenedor-receta">
+                <img class="img" src="/img/cheesecake.jpg" alt="">
+                <div class="receta">
+                    <h3 class="title-receta"> <a href="/html/recetas/cheesecake.html">Cheesecake de frutos rojos</a>
+                    </h3>
+                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa est inventore
+                        aliquid consequatur
+                        incidunt odio impedit perspiciatis repudiandae recusandae et pariatur aperiam beatae, sint
+                        doloremque qui reprehenderit delectus tenetur.</p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="card">
-                    <div class="img-wrapper"><img src="/img/portada1.jpg" class="d-block w-100" alt="..."> </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 2</h5>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p> -->
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+            <div class="contenedor-receta">
+                <img class="img" src="/img/pizza.jpg" alt="">
+                <div class="receta">
+                    <h3 class="title-receta"><a href="/html/recetas/pizza.html">Pizza napolitana</a></h3>
+                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa est inventore
+                        aliquid consequatur
+                        incidunt odio
+                        impedit perspiciatis repudiandae recusandae et pariatur aperiam beatae, sint doloremque qui
+                        reprehenderit
+                        delectus tenetur.</p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="card">
-                    <div class="img-wrapper"><img src="/img/portada2.jpg" class="d-block w-100" alt="..."> </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 3</h5>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p> -->
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+            <div class="contenedor-receta">
+                <img class="img" src="/img/albóndigas.jpg" alt="">
+                <div class="receta">
+                    <h3 class="title-receta"><a href="/html/recetas/albondigas.html">Albóndigas en salsa</a></h3>
+                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa est inventore
+                        aliquid
+                        consequatur
+                        incidunt odio
+                        impedit perspiciatis repudiandae recusandae et pariatur aperiam beatae, sint doloremque qui
+                        reprehenderit
+                        delectus tenetur.</p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="card">
-                    <div class="img-wrapper"><img src="/img/portada3.jpg" class="d-block w-100" alt="..."> </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 4</h5>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p> -->
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="card">
-                    <div class="img-wrapper"><img src="/img/portada4.jpg" class="d-block w-100" alt="..."> </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 5</h5>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p> -->
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="card">
-                    <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 6</h5>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p> -->
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="card">
-                    <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 7</h5>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p> -->
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="card">
-                    <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 8</h5>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p> -->
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="card">
-                    <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 9</h5>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p> -->
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+        </section>
 
         <section class="presentacion">
-            <h2 class="present">¿Quién soy?</h2>
+            <h2 class="title-main">¿Quién soy?</h2>
             <div class="contenido">
-                <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet explicabo nisi ducimus ea.
+                <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet explicabo nisi ducimus ea.
                     Ad
                     optio perferendis illo deserunt totam ducimus rem eum nam saepe, enim suscipit eaque ipsa magni
                     cupiditate.
@@ -181,16 +199,52 @@
         </section>
     </main>
 
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="nombre-pagina">
+                <ul class="titulo-pagina">
+                    <li><a href="index.html"></a>Mmm delicious!</li>
+                </ul>
+            </div>
+            <div class="contacto">
+                <h4>Contacto:</h4>
+                <p>delicious@gmail.com</p>
+                <p>+54 261-2030401</p>
+            </div>
+            <div class="explore">
+                <h4>Explore:</h4>
+                <a href="/html/index.html">Inicio</a>
+                <a href="#">Recetas</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="social-media">
+                <h4 class="follow">Sigueme:</h4>
+                <a href="https://es-la.facebook.com/" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://twitter.com" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.instagram.com/" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <div class="derechos">
+            <p class="copyright">©2023 Mmm delicious! - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-        <script src="/js/carrusel.js"></script>
+    <script src="/js/carrusel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
         integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
         crossorigin="anonymous"></script>
-    
+
 </body>
 
 </html>

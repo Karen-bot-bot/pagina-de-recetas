@@ -11,11 +11,10 @@ html {
 }
 
 body {
-  background: rgb(238, 232, 222);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
 }
 
-/*Navegador*/
+/**Navegador*/
 .nav {
   background-color: transparent;
   display: flex;
@@ -36,11 +35,11 @@ nav a {
 }
 
 .titulo-pagina li {
-  padding-left: 40px;
+  list-style: none;
   font-size: 1.5rem;
   font-family: "Sonsie One", cursive;
   color: white;
-  text-shadow: 4px 4px 6px rgba(34, 34, 41);
+  text-shadow: 4px 4px 6px rgb(3, 3, 3);
 }
 
 .enlaces {
@@ -50,7 +49,6 @@ nav a {
 }
 
 .enlaces li {
-  font-family: "Lato", sans-serif;
   font-size: 1.125rem;
   text-decoration: none;
   padding: 20px 32px;
@@ -121,6 +119,11 @@ nav a {
     url(/img/cheesecake.jpg);
 }
 
+.tiramisu {
+  background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
+    url(/img/tiramisu.jpg);
+}
+
 /*Contenido de recetas*/
 .card {
   width: 90%;
@@ -144,4 +147,66 @@ nav a {
 
 .contenedor p {
   padding: 10px;
+}
+
+/**Footer*/
+.footer {
+  background: #212529;
+  height: 250px;
+  color: white;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  border-bottom: 1px solid white;
+}
+
+.nombre-pagina {
+  display: flex;
+  justify-content: center;
+}
+
+.contacto,
+.explore,
+.social-media {
+  margin: 0 40px;
+}
+
+.explore a {
+  display: block;
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-icon {
+  display: inline-block;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.social-media-icon:hover {
+  background-color: white;
+  color: #000;
+}
+
+.social-media-icon i {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: center;
 }
