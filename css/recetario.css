@@ -49,6 +49,7 @@ nav a {
 }
 
 .enlaces li {
+  font-weight: bold;
   font-size: 1.125rem;
   text-decoration: none;
   padding: 20px 32px;
@@ -72,7 +73,7 @@ nav a {
   display: block;
 }
 
-/*Encabezado principal*/
+/**Encabezado principal*/
 .header {
   height: 100vh;
   padding: 0.1px;
@@ -88,7 +89,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /*ubica el texto uno debajo del otro, se utiliza junto a flexbox display*/
+  flex-direction: column; /**ubica el texto uno debajo del otro, se utiliza junto a flexbox display*/
   color: white;
 }
 
@@ -124,7 +125,12 @@ nav a {
     url(/img/tiramisu.jpg);
 }
 
-/*Contenido de recetas*/
+.ramen {
+  background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
+    url(/img/ramen.jpg);
+}
+
+/**Contenido de recetas*/
 .card {
   width: 90%;
   padding: 40px;
@@ -151,7 +157,7 @@ nav a {
 
 /**Footer*/
 .footer {
-  background: #212529;
+  background: #000;
   height: 250px;
   color: white;
 }

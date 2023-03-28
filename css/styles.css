@@ -49,6 +49,7 @@ nav a {
 }
 
 .enlaces li {
+  font-weight: bold;
   font-size: 1.125rem;
   text-decoration: none;
   padding: 20px 32px;
@@ -233,7 +234,6 @@ nav a {
   flex-direction: column;
   align-items: center;
   font-size: 1.25rem;
-  background: beige;
 }
 
 .contenedor-receta {
@@ -287,10 +287,10 @@ nav a {
 
 /** Sección Presentación*/
 .presentacion {
+    background-image: url(/img/fondo.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 40px;
   font-size: 1.25rem;
   position: relative;
 }
@@ -313,7 +313,7 @@ nav a {
 
 /**Footer*/
 .footer {
-  background: #212529;
+  background: black;
   height: 250px;
   color: white;
 }

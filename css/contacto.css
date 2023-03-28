@@ -6,9 +6,13 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 /*Navegador*/
 .nav {
-  background-color: #212529;
+  /* background-color: #212529; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,6 +22,41 @@ nav a {
   text-decoration: none;
   color: white;
   text-shadow: 0 3px 3px #000;
+}
+.header {
+  background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
+    url(/img/portada3.jpg);
+  height: 30vh;
+  padding: 0.1px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden; /*para ocultar algo si se desborda*/
+  margin: auto; /*para que lo centre todo*/
+}
+
+.head {
+  text-align: center;
+  padding: 0;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /*ubica el texto uno debajo del otro, se utiliza junto a flexbox display*/
+  color: white;
+}
+
+.title {
+  color: #fff;
+  font-size: 5rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid white;
+  text-shadow: 5px 5px 4px rgba(20, 18, 20, 0.5);
 }
 
 .titulo-pagina {
@@ -36,12 +75,14 @@ nav a {
 }
 
 .enlaces {
+  margin-bottom: 0;
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
 }
 
 .enlaces li {
+  font-weight: bold;
   font-size: 1.125rem;
   text-decoration: none;
   padding: 20px 32px;
@@ -65,8 +106,8 @@ nav a {
   background-color: #fff;
   display: block;
 }
-/**titulo*/
 
+/**titulo*/
 .title {
   text-align: center;
   font-size: 2.5rem;
@@ -76,8 +117,7 @@ nav a {
 /**Contacto*/
 .container-contacto {
   display: flex;
-  justify-content: space-between;
-  background: gainsboro;
+  justify-content: space-evenly;
   margin: 30px auto;
   padding: 20px;
 }
@@ -90,11 +130,12 @@ nav a {
 
 /**Formulario*/
 .form {
-  margin-left: 30px;
   padding: 0;
 }
 
 input {
+  border: 1px solid gray;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: center;
   width: 95%;
@@ -103,16 +144,113 @@ input {
 }
 
 textarea {
+  background-color: #f5f5f5;
   font-size: 1rem;
   padding: 12px 10px;
   margin: 0 15px 15px 15px;
 }
 
 input[type="submit"] {
+  border: none;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
   width: 200px;
+}
+
+input[type="submit"]:hover {
+  background: saddlebrown;
 }
 
 .ubicacion {
   padding-right: 30px;
   padding-left: 6px;
+}
+
+.title-sigueme {
+  margin: 20px;
+}
+
+.social-media-icon-1 {
+  display: inline-block;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.social-media-icon-1:hover {
+  background: saddlebrown;
+  color: white;
+}
+
+.social-media-icon-1 i {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+/**Footer*/
+.footer {
+  background: #000;
+  height: 250px;
+  color: white;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  border-bottom: 1px solid white;
+}
+
+.nombre-pagina {
+  display: flex;
+  justify-content: center;
+}
+
+.contacto,
+.explore,
+.social-media {
+  margin: 0 40px;
+}
+
+.explore a {
+  display: block;
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-icon {
+  display: inline-block;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-media-icon:hover {
+  background-color: white;
+  color: #000;
+}
+
+.social-media-icon i {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: center;
 }
