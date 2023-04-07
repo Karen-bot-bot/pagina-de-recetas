@@ -10,7 +10,6 @@ html {
   font-size: 16px;
 }
 
-/*Navegador*/
 .nav {
   /* background-color: #212529; */
   display: flex;
@@ -115,87 +114,54 @@ nav a {
   padding-top: 20px;
 }
 
-/*Contacto*/
-.container-contacto {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 30px auto;
-  padding: 20px;
+/* Imagenes recetas*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  margin: 30px 60px;
 }
 
-.title-contacto {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-/*Formulario*/
-.form {
-  padding: 0;
-}
-
-input {
-  border: 1px solid gray;
-  background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  width: 95%;
-  padding: 12px 10px;
-  margin: 0 auto;
-}
-
-textarea {
-  background-color: #f5f5f5;
-  font-size: 1rem;
-  padding: 12px 10px;
-  margin: 0 15px 15px 15px;
-}
-
-input[type="submit"] {
-  border: none;
-  border-radius: 30px;
-  background: #000;
-  color: #fff;
-  width: 200px;
-}
-
-input[type="submit"]:hover {
-  background: saddlebrown;
-}
-
-.ubicacion {
-  padding-right: 30px;
-  padding-left: 6px;
-}
-
-.title-sigueme {
-  margin: 20px;
-}
-
-.social-media-icon-1 {
-  display: inline-block;
-  margin-left: 20px;
-  width: 40px;
-  height: 40px;
-  background: #000;
-  border-radius: 50%;
+.grid-item {
+  border-radius: 10px;
+  margin-top: 20px;
+  position: relative;
+  height: 350px;
   text-align: center;
-  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
-.social-media-icon-1:hover {
-  background: saddlebrown;
-  color: white;
+.imagen {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
 }
 
-.social-media-icon-1 i {
-  font-size: 24px;
-  line-height: 40px;
+.grid-item:hover{
+  transform: translateY(-20px);
+  box-shadow: 5px 6px 11px rgba(2, 2, 2, 0.507);;
 }
 
-/**Footer*/
+.texto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 25px;
+  color: black;
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+}
+
+/* Footer*/
 .footer {
-  background: #000;
+  background: black;
   height: 250px;
   color: white;
 }
@@ -223,6 +189,7 @@ input[type="submit"]:hover {
   color: white;
 }
 
+/* iconos */
 .social-media {
   display: flex;
   justify-content: flex-end;
@@ -237,7 +204,6 @@ input[type="submit"]:hover {
   border-radius: 50%;
   text-align: center;
   color: #fff;
-  cursor: pointer;
 }
 
 .social-media-icon:hover {
@@ -255,3 +221,4 @@ input[type="submit"]:hover {
   margin-top: 16px;
   text-align: center;
 }
+

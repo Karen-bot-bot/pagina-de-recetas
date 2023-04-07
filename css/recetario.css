@@ -29,9 +29,8 @@ nav a {
 }
 
 .titulo-pagina {
-  display: flex;
-  align-items: center;
   cursor: pointer;
+  margin-bottom: 0;
 }
 
 .titulo-pagina li {
@@ -46,6 +45,7 @@ nav a {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
+  margin: 0;
 }
 
 .enlaces li {
@@ -58,7 +58,7 @@ nav a {
 
 .enlaces a::after {
   content: "";
-  height: 2px;
+  height: 3px;
   width: 0%;
   background-color: #fff;
   display: block;
@@ -67,13 +67,13 @@ nav a {
 
 .enlaces a:hover::after {
   content: "";
-  height: 2px;
+  height: 3px;
   width: 100%;
   background-color: #fff;
   display: block;
 }
 
-/**Encabezado principal*/
+/*Encabezado principal*/
 .header {
   height: 100vh;
   padding: 0.1px;
@@ -133,7 +133,7 @@ nav a {
 /**Contenido de recetas*/
 .card {
   width: 90%;
-  padding: 40px;
+  padding: 20px;
   margin: 40px auto;
   border-radius: 5px;
   box-shadow: 4px 3px 15px -2px rgba(0, 0, 0, 0.6);
