@@ -16,16 +16,39 @@
 
     <!-- Header y navbar -->
     <header class="header">
-        <nav class="nav">
-            <ul class="titulo-pagina">
-                <li><a href="/html/index.html"></a>Mmm delicious!</li>
-            </ul>
-            <ul class="enlaces">
-                <li><a href="/html/index.html">Inicio</a></li>
-                <li><a href="/html/todas-las-recetas/content-recetas.html">Recetas</a></li>
-                <li><a href="/html/contacto/contacto.html">Contacto</a></li>
-            </ul>
+
+        <nav class="navegador navbar navbar-expand-md p-0">
+            <div class="container-fluid">
+                <ul class="titulo-pagina">
+                    <li><a class="d-none d-sm-inline-block" href="/html/index.html">Mmm delicious!</a></li>
+                </ul>
+
+                <button class="d-md-none navbar-toggler border-light focus-ring focus-ring-light" type="button"
+                    data-bs-theme="dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+                    aria-controls="offcanvasResponsive"><span class="navbar-toggler-icon"></span></button>
+
+                <div class="offcanvas-md offcanvas-start" tabindex="-1" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header">
+                        <a class="offcanvas-title text-dark" id="offcanvasResponsiveLabel">Mmm delicious!</a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                        <div>
+                            <a class="side-item" href="/html/index.html">Inicio</a></li>
+                            <a class="side-item"
+                                href="/html/todas-las-recetas/conMmm delicious!tent-recetas.html">Recetas</a></li>
+                            <a class="side-item" href="/html/contacto/contacto.html">Contacto</a></li>
+                        </div>
+                    </div>
+                </div>
+                <ul class="enlaces navbar-nav collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <li><a href="/html/index.html">Inicio</a></li>
+                    <li><a href="/html/todas-las-recetas/conMmm delicious!tent-recetas.html">Recetas</a></li>
+                    <li><a href="/html/contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
+
 
         <div class="contenedor head">
             <h1 class="title">Bienvenid@ a mi página!</h1>

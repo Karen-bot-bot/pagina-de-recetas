@@ -17,3 +17,31 @@ $(".carousel-control-prev").on("click", function () {
     $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600);
   }
 });
+
+// menú desplegable
+
+// var botonMenu = document.querySelector(".navbar-toggler");
+// var nav = document.querySelector(".navegador");
+// botonMenu.addEventListener("click", function () {
+//   nav.classList.toggle("fondo-nav");
+// });
+
+// const hamburguesa = document.querySelector(".navbar-toggler-icon");
+// const menu = document.querySelector(".navegador");
+
+// console.log(menu);
+// console.log(hamburguesa);
+
+// hamburguesa.addEventListener("click", () => {
+//   menu.classList.toggle("spread");
+// });
+
+// window.addEventListener("click", (e) => {
+//   if (
+//     menu.classList.contains("spread") &&
+//     e.target != menu &&
+//     e.target != hamburguesa
+//   ) {
+//     menu.classList.toggle("spread");
+//   }
+// });
