@@ -18,30 +18,16 @@ $(".carousel-control-prev").on("click", function () {
   }
 });
 
-// menú desplegable
+// deslizamiento de sidebar
 
-// var botonMenu = document.querySelector(".navbar-toggler");
-// var nav = document.querySelector(".navegador");
-// botonMenu.addEventListener("click", function () {
-//   nav.classList.toggle("fondo-nav");
-// });
+// var sidebar = document.getElementById("offcanvasResponsive");
+// var toggleBtn = document.getElementById("toggle-btn");
 
-// const hamburguesa = document.querySelector(".navbar-toggler-icon");
-// const menu = document.querySelector(".navegador");
-
-// console.log(menu);
-// console.log(hamburguesa);
-
-// hamburguesa.addEventListener("click", () => {
-//   menu.classList.toggle("spread");
-// });
-
-// window.addEventListener("click", (e) => {
-//   if (
-//     menu.classList.contains("spread") &&
-//     e.target != menu &&
-//     e.target != hamburguesa
-//   ) {
-//     menu.classList.toggle("spread");
+// toggleBtn.addEventListener("click", function () {
+//   if (sidebar.style.left === "-250px") {
+//     sidebar.style.left = "0"; // Abre el sidebar
+//   } else {
+//     sidebar.style.left = "-250px"; // Cierra el sidebar
 //   }
 // });
+

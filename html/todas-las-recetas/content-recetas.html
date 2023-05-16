@@ -9,28 +9,65 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/css/content-recetas.css"">
+    <link rel="stylesheet" href="/css/content-recetas.css">
 </head>
 
 <body>
     <!-- Header y navbar -->
-    <header class="header">
-        <nav class="nav">
-            <ul class="titulo-pagina">
-                <li><a href="/html/index.html"></a>Mmm delicious!</li>
-            </ul>
-            <ul class="enlaces">
-                <li><a href="/html/index.html">Inicio</a></li>
-                <li><a href="/html/todas-las-recetas/content-recetas.html">Recetas</a></li>
-                <li><a href="/html/contacto/contacto.html">Contacto</a></li>
-            </ul>
+    <header class=" header">
+        <nav class="navegador navbar navbar-expand-md p-0">
+            <div class="container-fluid">
+                <ul class="titulo-pagina">
+                    <li><a class="d-sm-inline-block" href="/html/index.html">Mmm delicious!</a></li>
+                </ul>
+
+                <!-- Sidebar -->
+                <button class="d-md-none navbar-toggler border-light focus-ring focus-ring-light" id="toggle-btn"
+                    type="button" data-bs-theme="dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+                    aria-controls="offcanvasResponsive"><span class="navbar-toggler-icon"></span></button>
+
+                <div class="sidebar offcanvas-md offcanvas-start" tabindex="-1" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header mt-0 ps-0 m-4">
+                        <a class="offcanvas-title" id="offcanvasResponsiveLabel">Mmm delicious!</a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body mt-4 p-0 d-md-none d-flex flex-column">
+                        <div class="side-item"><i class='icon bx bxs-home-alt-2'></i><a class="item"
+                                href="/html/index.html">Inicio</a></div>
+                        <div class="side-item">
+                            <i class='icon bx bxs-bowl-hot'></i><a class="item "
+                                href="/html/todas-las-recetas/conMmm delicious!tent-recetas.html">Recetas</a>
+                        </div>
+                        <div class="side-item"><i class='icon bx bxs-message'></i><a class="item"
+                                href="/html/contacto/contacto.html">Contacto</a></div>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="navb-button"
+                            type="button">Hablemos!</a>
+                    </div>
+
+                    <div class="sociales d-md-none d-flex">
+
+                        <a target="_blank" href="#"><i class='icono bx bxl-facebook'></i></a>
+                        <a target="_blank" href="#"><i class='icono bx bxl-youtube'></i></a>
+                        <a target="_blank" href="#"><i class='icono bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+
+                <ul class="enlaces navbar-nav collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <li><a href="/html/index.html">Inicio</a></li>
+                    <li><a href="/html/todas-las-recetas/conMmm delicious!tent-recetas.html">Recetas</a></li>
+                    <li><a href="/html/contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
 
         <div class="contenedor head">
             <h1 class="title">Recetas</h1>
         </div>
     </header>
-    
+
     <div class="grid-container">
         <div class="grid-item">
             <a href="/html/recetas/cheesecake.html">
@@ -106,42 +143,49 @@
         </div>
     </div>
 
-        <!-- Footer  -->
-        <footer class="footer">
-            <div class="container-footer">
-                <div class="nombre-pagina">
-                    <ul class="titulo-pagina">
-                        <li><a href="index.html"></a>Mmm delicious!</li>
-                    </ul>
-                </div>
-                <div class="contacto">
-                    <h4>Contacto:</h4>
-                    <p>delicious@gmail.com</p>
-                    <p>+54 261-2030401</p>
-                </div>
-                <div class="explore">
-                    <h4>Explore:</h4>
-                    <a href="/html/index.html">Inicio</a>
-                    <a href="#">Recetas</a>
-                    <a href="/html/contacto/contacto.html">Contacto</a>
-                </div>
-                <div class="social-media">
-                    <h4 class="follow">Sigueme:</h4>
-                    <a href="https://es-la.facebook.com/" class="social-media-icon facebook">
-                        <i class='bx bxl-facebook'></i>
-                    </a>
-                    <a href="https://twitter.com" class="social-media-icon twitter">
-                        <i class='bx bxl-twitter'></i>
-                    </a>
-                    <a href="https://www.instagram.com/" class="social-media-icon instagram">
-                        <i class='bx bxl-instagram'></i>
-                    </a>
-                </div>
+    <!-- Footer  -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="nombre-pagina">
+                <ul class="titulo-pagina">
+                    <li><a href="index.html"></a>Mmm delicious!</li>
+                </ul>
             </div>
-            <div class="derechos">
-                <p class="copyright">©2023 Mmm delicious! - Todos los derechos reservados.</p>
+            <div class="contacto">
+                <h4>Contacto:</h4>
+                <p>delicious@gmail.com</p>
+                <p>+54 261-2030401</p>
             </div>
-        </footer>
+            <div class="explore">
+                <h4>Explore:</h4>
+                <a href="/html/index.html">Inicio</a>
+                <a href="#">Recetas</a>
+                <a href="/html/contacto/contacto.html">Contacto</a>
+            </div>
+            <div class="social-media">
+                <h4 class="follow">Sigueme:</h4>
+                <a href="https://es-la.facebook.com/" class="social-media-icon facebook">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://twitter.com" class="social-media-icon twitter">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.instagram.com/" class="social-media-icon instagram">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <div class="derechos">
+            <p class="copyright">©2023 Mmm delicious! - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

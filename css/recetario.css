@@ -15,14 +15,14 @@ body {
 }
 
 /**Navegador*/
-.nav {
+.navegador {
   background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav a {
+.navegador a {
   text-decoration: none;
   color: white;
   text-shadow: 0 3px 3px #000;
@@ -37,8 +37,6 @@ nav a {
   list-style: none;
   font-size: 1.5rem;
   font-family: "Sonsie One", cursive;
-  color: white;
-  text-shadow: 4px 4px 6px rgb(3, 3, 3);
 }
 
 .enlaces {
@@ -71,6 +69,85 @@ nav a {
   width: 100%;
   background-color: #fff;
   display: block;
+}
+
+/*SideBar*/
+.sidebar {
+  background-color: #252525;
+}
+
+.offcanvas-header {
+  border-bottom: 2px solid white;
+}
+
+.offcanvas-title {
+  font-size: 1.5rem;
+  font-family: "Sonsie One", cursive;
+}
+
+.offcanvas-body .item {
+  color: #9b9b9b;
+  text-shadow: none;
+}
+
+.side-item {
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 15px 20px;
+  margin: 10px 30px 10px 20px;
+  display: flex;
+}
+
+.side-item:hover {
+  background: #3f3f3f5d;
+  border-radius: 20px;
+}
+
+.side-item:hover .item {
+  color: white !important;
+}
+
+.side-item:hover .icon {
+  color: white;
+}
+
+.icon {
+  font-size: 1.5rem;
+  padding-right: 20px;
+  color: #9b9b9b;
+}
+
+.offcanvas-body .navb-button {
+  text-align: center;
+  width: 90%;
+  padding: 15px 20px;
+  margin: 60px auto;
+  font-size: 1.125rem;
+  background-color: white;
+  color: #000;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+.offcanvas-body:hover .navb-button {
+  box-shadow: 5px 10px 11px rgba(2, 2, 2, 0.507);
+}
+
+.sociales {
+  justify-content: space-around;
+  border-top: 1px solid #9b9b9b;
+}
+
+.icono {
+  font-size: 1.5rem;
+  color: #9b9b9b;
+  text-shadow: none;
+  padding: 20px;
+}
+
+.icono:hover {
+  background: #3f3f3f5d;
+  color: white;
 }
 
 /*Encabezado principal*/

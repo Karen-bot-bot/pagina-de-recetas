@@ -10,53 +10,16 @@ html {
   font-size: 16px;
 }
 
-.nav {
-  /* background-color: #212529; */
+.navegador {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav a {
+.navegador a {
   text-decoration: none;
   color: white;
   text-shadow: 0 3px 3px #000;
-}
-
-.header {
-  background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
-    url(/img/portada3.jpg);
-  height: 30vh;
-  padding: 0.1px;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.contenedor {
-  width: 90%;
-  max-width: 1200px;
-  overflow: hidden; /*para ocultar algo si se desborda*/
-  margin: auto; /*para que lo centre todo*/
-}
-
-.head {
-  text-align: center;
-  padding: 0;
-  height: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; /*ubica el texto uno debajo del otro, se utiliza junto a flexbox display*/
-  color: white;
-}
-
-.title {
-  color: #fff;
-  font-size: 5rem;
-  margin-bottom: 10px;
-  border-bottom: 2px solid white;
-  text-shadow: 5px 5px 4px rgba(20, 18, 20, 0.5);
 }
 
 .titulo-pagina {
@@ -69,8 +32,6 @@ nav a {
 .titulo-pagina li {
   font-size: 1.5rem;
   font-family: "Sonsie One", cursive;
-  color: white;
-  text-shadow: 4px 4px 6px rgb(3, 3, 3);
   list-style: none;
 }
 
@@ -107,11 +68,121 @@ nav a {
   display: block;
 }
 
-/**titulo*/
-.title {
+/*SideBar*/
+.sidebar {
+  background-color: #252525;
+}
+
+.offcanvas-header {
+  border-bottom: 2px solid white;
+}
+
+.offcanvas-title {
+  font-size: 1.5rem;
+  font-family: "Sonsie One", cursive;
+}
+
+.offcanvas-body .item {
+  color: #9b9b9b;
+  text-shadow: none;
+}
+
+.side-item {
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 15px 20px;
+  margin: 10px 30px 10px 20px;
+  display: flex;
+}
+
+.side-item:hover {
+  background: #3f3f3f5d;
+  border-radius: 20px;
+}
+
+.side-item:hover .item {
+  color: white !important;
+}
+
+.side-item:hover .icon {
+  color: white;
+}
+
+.icon {
+  font-size: 1.5rem;
+  padding-right: 20px;
+  color: #9b9b9b;
+}
+
+.offcanvas-body .navb-button {
   text-align: center;
+  width: 90%;
+  padding: 15px 20px;
+  margin: 60px auto;
+  font-size: 1.125rem;
+  background-color: white;
+  color: #000;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+.offcanvas-body:hover .navb-button {
+  box-shadow: 5px 10px 11px rgba(2, 2, 2, 0.507);
+}
+
+.sociales {
+  justify-content: space-around;
+  border-top: 1px solid #9b9b9b;
+}
+
+.icono {
+  font-size: 1.5rem;
+  color: #9b9b9b;
+  text-shadow: none;
+  padding: 20px;
+}
+
+.icono:hover {
+  background: #3f3f3f5d;
+  color: white;
+}
+
+/* titulo*/
+.title {
   font-size: 2.5rem;
+  color: #fff;
   padding-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid white;
+  text-shadow: 5px 5px 4px rgba(20, 18, 20, 0.5);
+}
+
+.header {
+  background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
+    url(/img/portada3.jpg);
+  height: 30vh;
+  padding: 0.1px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden; /*para ocultar algo si se desborda*/
+  margin: auto; /*para que lo centre todo*/
+}
+
+.head {
+  text-align: center;
+  padding: 0;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /*ubica el texto uno debajo del otro, se utiliza junto a flexbox display*/
+  color: white;
 }
 
 /* Imagenes recetas*/
@@ -139,9 +210,9 @@ nav a {
   object-fit: cover;
 }
 
-.grid-item:hover{
+.grid-item:hover {
   transform: translateY(-20px);
-  box-shadow: 5px 6px 11px rgba(2, 2, 2, 0.507);;
+  box-shadow: 5px 6px 11px rgba(2, 2, 2, 0.507);
 }
 
 .texto {
@@ -161,7 +232,7 @@ nav a {
 
 /* Footer*/
 .footer {
-  background: black;
+  background: #252525;
   height: 250px;
   color: white;
 }
@@ -221,4 +292,3 @@ nav a {
   margin-top: 16px;
   text-align: center;
 }
-
