@@ -61,17 +61,14 @@ nav a {
 }
 
 .titulo-pagina {
-  padding-left: 40px;
-  display: flex;
-  align-items: center;
+  margin-bottom: 0;
   cursor: pointer;
+  text-shadow: 0px 3px 3px rgb(3, 3, 3);
 }
 
 .titulo-pagina li {
   font-size: 1.5rem;
   font-family: "Sonsie One", cursive;
-  color: white;
-  text-shadow: 4px 4px 6px rgb(3, 3, 3);
   list-style: none;
 }
 
