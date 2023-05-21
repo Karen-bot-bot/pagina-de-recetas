@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/css/recetario.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         <nav class="navegador navbar navbar-expand-md p-0">
             <div class="container-fluid">
                 <ul class="titulo-pagina">
-                    <li><a class="d-sm-inline-block" href="/html/index.html">Mmm delicious!</a></li>
+                    <li><a class="d-sm-inline-block" href="/index.html">Mmm delicious!</a></li>
                 </ul>
 
                 <!-- Sidebar -->
@@ -35,11 +35,14 @@
 
                     <div class="offcanvas-body mt-4 p-0 d-md-none d-flex flex-column">
                         <div class="side-item"><i class='icon bx bxs-home-alt-2'></i><a class="item"
-                                href="/html/index.html">Inicio</a></div>
+                                href="/index.html">Inicio</a></div>
                         <div class="side-item">
                             <i class='icon bx bxs-bowl-hot'></i><a class="item "
-                                href="/html/todas-las-recetas/content-recetas.html">Recetas</a>
+                                href="/html/recetas/content-recetas.html">Recetas</a>
                         </div>
+                        <div class="side-item"><i class='icon bx bxs-message'></i><a class="item"
+                                href="/html/contacto/contacto.html">Sobre
+                                mí</a></div>
                         <div class="side-item"><i class='icon bx bxs-message'></i><a class="item"
                                 href="/html/contacto/contacto.html">Contacto</a></div>
                         <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="navb-button"
@@ -55,8 +58,9 @@
                 </div>
 
                 <ul class="enlaces navbar-nav collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <li><a href="/html/index.html">Inicio</a></li>
-                    <li><a href="/html/todas-las-recetas/conMmm delicious!tent-recetas.html">Recetas</a></li>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/html/recetas/content-recetas.html">Recetas</a></li>
+                    <li><a href="/html/contacto/contacto.html">Sobre mí</a></li>
                     <li><a href="/html/contacto/contacto.html">Contacto</a></li>
                 </ul>
             </div>
@@ -67,8 +71,8 @@
         </div>
     </header>
 
-    <section class="card">
-        <div class="contenedor">
+    <section class="card-1">
+        <div class="contenedor-recetario">
             <h2 class="info">Sobre esta receta:</h2>
             <p>Es una deliciosa combinación de capas de bizcocho empapado en café, crema de mascarpone y cacao en polvo.
                 <br>
@@ -83,8 +87,8 @@
         </div>
     </section>
 
-    <section class="card">
-        <div class="contenedor">
+    <section class="card-1">
+        <div class="contenedor-recetario">
             <h2 class="ingredientes">Ingredientes</h2>
             <p><b>Para 36 masitas vainillas:</b></p>
             <ul>
@@ -113,8 +117,8 @@
         </div>
     </section>
 
-    <section class="card">
-        <div class="contenedor">
+    <section class="card-1">
+        <div class="contenedor-recetario">
             <h2 class="pasos">Preparación</h2>
             <p><b>Paso a paso:</b></p>
             <ol>
@@ -156,7 +160,7 @@
         <div class="container-footer">
             <div class="nombre-pagina">
                 <ul class="titulo-pagina">
-                    <li><a href="index.html"></a>Mmm delicious!</li>
+                    <li><a href="/index.html"></a>Mmm delicious!</li>
                 </ul>
             </div>
             <div class="contacto">
@@ -166,13 +170,16 @@
             </div>
             <div class="explore">
                 <h4>Explore:</h4>
-                <a href="/html/index.html">Inicio</a>
+                <a href="/index.html">Inicio</a>
                 <a href="/html/todas-las-recetas/content-recetas.html">Recetas</a>
+                <a href="/html/todas-las-recetas/content-recetas.html">Sobre mí</a>
                 <a href="/html/contacto/contacto.html">Contacto</a>
             </div>
             <div class="social-media">
                 <h4 class="follow">Sigueme:</h4>
-                <a href="https://www.youtube.com/" class="social-media-icon"><i class='bx bxl-youtube'></i></a>
+                <a href="https://www.youtube.com/" class="social-media-icon">
+                    <i class='bx bxl-youtube'></i>
+                </a>
                 <a href="https://es-la.facebook.com/" class="social-media-icon">
                     <i class='bx bxl-facebook'></i>
                 </a>
