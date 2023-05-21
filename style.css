@@ -154,7 +154,7 @@ body {
 /*Portada*/
 .header {
   background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
-    url(/img/portada3.jpg);
+    url(img/portada3.jpg);
   height: 100vh;
   padding: 0.1px;
   background-position: center;
@@ -563,32 +563,32 @@ input[type="submit"]:hover {
 
 .albondigas {
   background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
-    url(/img/albóndigas.jpg);
+    url(img/albóndigas.jpg);
 }
 
 .pizza {
   background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
-    url(/img/pizza.jpg);
+    url(img/pizza.jpg);
 }
 
 .pasteldepapas {
   background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
-    url(/img/pasteldepapas.jpg);
+    url(img/pasteldepapas.jpg);
 }
 
 .cheesecake {
   background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
-    url(/img/cheesecake.jpg);
+    url(img/cheesecake.jpg);
 }
 
 .tiramisu {
   background-image: linear-gradient(to top, #424a5a88 0%, #373a3f56 100%),
-    url(/img/tiramisu.jpg);
+    url(img/tiramisu.jpg);
 }
 
 .ramen {
   background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
-    url(/img/ramen.jpg);
+    url(img/ramen.jpg);
 }
 
 /**Contenido de recetas*/
@@ -597,7 +597,7 @@ input[type="submit"]:hover {
   padding: 20px;
   margin: 40px auto;
   border-radius: 5px;
-  box-shadow: 4px 3px 15px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 6px 11px -2px rgba(0, 0, 0, 0.6);
   font-size: 1.25rem;
   background: white;
 }
