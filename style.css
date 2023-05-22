@@ -747,7 +747,7 @@ input[type="submit"]:hover {
   }
 
   .social-media {
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 15px;
   }
 
@@ -842,19 +842,18 @@ input[type="submit"]:hover {
   }
 
   .cont {
-    justify-content: space-between;
+    flex-direction: column;
     margin: 15px 20px;
   }
 
   .explore,
   .contacto {
-    margin: 0;
+    margin: 10px;
   }
 
   .social-media {
-    margin-bottom: 15px;
     justify-content: center;
-    margin: 0 0 15px 0;
+    margin: 0 20px 15px 20px;
   }
 
   .follow {
@@ -908,5 +907,4 @@ input[type="submit"]:hover {
     width: 95vw;
     padding: 10px;
   }
-  
 }
