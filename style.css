@@ -524,6 +524,7 @@ input[type="submit"]:hover {
 
 .grid-item {
   border: 1px solid rgba(128, 128, 128, 0.5);
+  background-color: white;
   border-radius: 10px;
   margin-top: 20px;
   position: relative;
@@ -802,6 +803,15 @@ input[type="submit"]:hover {
     padding: 30px 0;
   }
 
+  .cheesecake .head .title,
+  .ramen .head .title,
+  .pasteldepapas .head .title,
+  .albondigas .head .title,
+  .pizza .head .title,
+  .tiramisu .head .tile {
+    border-bottom: none;
+  }
+
   /*Carrusel de cards*/
   .carousel-item {
     margin: 0 auto;
@@ -872,11 +882,11 @@ input[type="submit"]:hover {
   .grid-container {
     grid-template-columns: none;
     grid-gap: 10px;
-    margin: 20px 40px;
+    margin: 20px;
   }
 
   .grid-item {
-    margin-top: 15px;
+    margin-top: 20px;
     height: 300px;
   }
 
