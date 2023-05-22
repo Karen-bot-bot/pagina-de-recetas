@@ -644,17 +644,17 @@ input[type="submit"]:hover {
   }
 
   .titulo-pagina {
-    padding: 0;
+    padding-left: 0;
+    margin-left: 1rem;
   }
 
-  /*Sidebar*/
-  .sidebar {
-    height: 100vh;
+  .navegador .titulo-pagina li {
+    width: 30px;
   }
 
   /*Portada*/
   .title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .contenedor {
