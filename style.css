@@ -483,9 +483,9 @@ input[type="submit"]:hover {
   background: saddlebrown;
 }
 
-.ubicacion {
-  padding-right: 30px;
-  padding-left: 6px;
+.mapa {
+  width: 600px;
+  height: 315px;
 }
 
 .title-sigueme {
@@ -560,7 +560,6 @@ input[type="submit"]:hover {
 }
 
 /** RECETARIO */
-
 .albondigas {
   background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
     url(img/albóndigas.jpg);
@@ -608,7 +607,7 @@ input[type="submit"]:hover {
 }
 
 .card-1 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 10px;
 }
 
@@ -616,7 +615,28 @@ input[type="submit"]:hover {
   padding: 10px;
 }
 
+.card-1 li {
+  padding: 5px 0;
+}
+
 /*TODO: Diseño responsivo*/
+@media (max-width: 1200px) and (min-width: 992px) {
+  /*Contenido recetas*/
+  .grid-container {
+    grid-gap: 10px;
+    margin: 20px;
+  }
+
+  /* Página contacto */
+  .container-contacto {
+    padding: 20px 0;
+  }
+
+  .mapa {
+    width: 450px;
+  }
+}
+
 @media (max-width: 768px) {
   /*Navbar*/
   .navegador {
@@ -640,10 +660,25 @@ input[type="submit"]:hover {
   .contenedor {
     padding: 0;
   }
+
+  /*Página contacto*/
+  .container-contacto {
+    flex-direction: column-reverse;
+    margin: 40px 0;
+  }
+
+  .ubicacion {
+    margin: 40px 0;
+  }
+
+  .mapa {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
-/*Footer*/
 @media (max-width: 992px) and (min-width: 768px) {
+  /*Footer*/
   .container-footer {
     padding-left: 0;
   }
@@ -670,6 +705,23 @@ input[type="submit"]:hover {
   .youtube {
     margin-left: 0;
   }
+
+  /*Contenido recetas*/
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px 10px;
+  }
+
+  .grid-item {
+    margin-top: 20px;
+    height: 330px;
+  }
+
+  /* PÁGINA CONTACTO*/
+  .mapa {
+    width: 400px;
+  }
 }
 
 /*Maximo hasta tables y minimo hasta celular*/
@@ -686,10 +738,8 @@ input[type="submit"]:hover {
   }
 
   .cont {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin: 15px 0;
+    justify-content: space-between;
+    margin: 15px 30px;
   }
 
   .contacto {
@@ -704,10 +754,31 @@ input[type="submit"]:hover {
   .copyright {
     margin: 5px;
   }
+
+  /*Contenido recetas*/
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px 10px;
+  }
+
+  .grid-item {
+    margin-top: 20px;
+    height: 300px;
+  }
+
+  /* PÁGINA CONTACTO*/
+  .title-contacto {
+    margin-bottom: 40px;
+  }
+
+  .container-contacto {
+    padding: 20px 60px;
+  }
 }
 
 @media (min-width: 576px) {
-  /*Carrousel*/
+  /*Index Carrousel*/
   .carousel-inner {
     display: flex;
   }
@@ -727,6 +798,10 @@ input[type="submit"]:hover {
 
 /*Celulares*/
 @media (max-width: 576px) {
+  .title-main {
+    padding: 30px 0;
+  }
+
   /*Carrusel de cards*/
   .carousel-item {
     margin: 0 auto;
@@ -734,7 +809,7 @@ input[type="submit"]:hover {
 
   .card {
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .card .img-wrapper {
@@ -767,9 +842,8 @@ input[type="submit"]:hover {
   }
 
   .cont {
-    display: flex;
-    justify-content: space-around;
-    margin: 15px 0;
+    justify-content: space-between;
+    margin: 15px 20px;
   }
 
   .explore,
@@ -794,4 +868,45 @@ input[type="submit"]:hover {
   .copyright {
     margin: 10px;
   }
+
+  /*Contenido recetas*/
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 20px 10px;
+  }
+
+  .grid-item {
+    margin-top: 20px;
+    height: 280px;
+  }
+  .texto {
+    font-size: 1.125rem;
+  }
+
+  /* PÁGINA CONTACTO y CONTENIDO RECETAS*/
+  .contenedor-central {
+    height: 50%;
+  }
+
+  .header-otros {
+    height: 35vh;
+  }
+
+  .title-central {
+    font-size: 2.5rem;
+    border-bottom: none;
+    padding-top: 30px;
+  }
+
+  .title-contacto {
+    margin-bottom: 50px;
+  }
+
+  /* RECETARIO */
+  .card-1 {
+    width: 95vw;
+    padding: 10px;
+  }
+  
 }
