@@ -156,29 +156,33 @@ body {
   color: white;
 }
 
-.title {
+.title-portada {
   font-size: 3.5rem;
 }
 
 /* Carrusel*/
 .carousel-inner {
+  display: flex;
   padding: 1em;
   padding-top: 0;
+  margin-bottom: 25px;
 }
 
 .carousel-item {
   margin: 10px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .card {
   margin: 0 0.5em;
-  box-shadow: 5px 6px 11px rgba(2, 2, 2, 0.507);
+  box-shadow: 2px 2px 8px rgba(2, 2, 2, 0.507);
   border: none;
   width: 300px;
-  height: 400px;
-  margin-bottom: 25px;
-  border-radius: 5px;
+  height: 310px;
+  border-radius: 8px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .carousel-control-prev,
@@ -201,34 +205,32 @@ body {
   max-height: 100%;
 }
 
-.card-title {
-  padding-top: 20px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #000;
+/* ICONOS DE LAS TARJETAS*/
+.iconos-card {
+  margin-top: 32px;
 }
 
+.icon-card {
+  font-size: 20px;
+}
+
+/*
 .boton-primario {
   border: none;
   display: block;
   background: #7a9c6e;
   padding: 13px;
   color: white;
-  border-radius: 30px;
   width: 150px;
-  margin: 0 auto;
+  margin: auto;
   margin-top: 30px;
-  text-align: center;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .boton-primario:hover {
-  background-color: white;
   border: 2px solid #7a9c6e;
   color: #7a9c6e;
-  font-weight: bold;
-}
+}*/
 
 .boton-secundario {
   display: block;
@@ -748,8 +750,9 @@ input[type="submit"]:hover {
   }
 }
 
+/*
 @media (min-width: 576px) {
-  /*Index Carrousel*/
+  /*Index Carrousel
   .carousel-inner {
     display: flex;
   }
@@ -758,7 +761,7 @@ input[type="submit"]:hover {
     margin: 0 auto;
     display: flex;
   }
-}
+}*/
 
 @media (max-width: 412px) {
   /*Sidebar*/
@@ -780,20 +783,6 @@ input[type="submit"]:hover {
   .pizza .head .title,
   .tiramisu .head .tile {
     border-bottom: none;
-  }
-
-  /*Carrusel de cards*/
-  .carousel-item {
-    margin: 0 auto;
-  }
-
-  .card {
-    margin: 0 auto;
-    margin-bottom: 30px;
-  }
-
-  .card .img-wrapper {
-    height: 12.5em;
   }
 
   /*Sección 1, recetas favoritas*/
