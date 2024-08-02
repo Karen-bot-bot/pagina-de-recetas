@@ -9,24 +9,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
 
     <header class="header">
 
-        <nav class="navegador navbar navbar-expand-md p-0">
-            <div class="container-fluid">
-                <ul class="titulo-pagina">
-                    <li><a class="d-sm-inline-block" href="index.html">Mmm delicious!</a></li>
-                </ul>
+        <nav class="navegador navbar navbar-expand-md d-flex bg-white">
 
+            <div class="container-fluid justify-content-between ">
+                <ul class="titulo-pagina">
+                    <li><a class="d-flex navbar-brand" href="index.html">Mmm delicious!</a></li>
+                </ul>
                 <!-- Sidebar -->
-                <button class="ms-5 d-md-none navbar-toggler border-light focus-ring focus-ring-light"
-                    id="toggle-btn" type="button" data-bs-theme="dark" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><span
-                        class="navbar-toggler-icon"></span></button>
+                <button class="ms-5 d-md-none navbar-toggler border-dark focus-ring focus-ring-dark" id="toggle-btn"
+                    type="button" data-bs-theme="light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+                    aria-controls="offcanvasResponsive"><span class="navbar-toggler-icon"></span></button>
 
                 <div class="sidebar offcanvas-md offcanvas-start" tabindex="-1" id="offcanvasResponsive"
                     aria-labelledby="offcanvasResponsiveLabel">
@@ -59,7 +58,7 @@
                     </div>
                 </div>
 
-                <ul class="enlaces navbar-nav collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="enlaces navbar-nav collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="html/recetas/content-recetas.html">Recetas</a></li>
                     <li><a href="html/">Sobre mí</a></li>
@@ -68,9 +67,10 @@
             </div>
         </nav>
 
-        <div class="contenedor head">
-            <h1 class="title">Bienvenid@ a mi página!</h1>
-            <h2>Aquí encontrarás un sinfín de recetas deliciosas</h2>
+        <div
+            class="container-fluid contenedor-head p-0 m-auto d-flex flex-column justify-content-center align-items-center text-center overflow-hidden">
+            <h1 class="title">¡Encuentra las recetas más deliciosas!</h1>
+            <h2>...</h2>
         </div>
     </header>
 
@@ -84,46 +84,46 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="card">
-                        <div class="img-wrapper"><img src="img/ramen.jpg"> </div>
+                        <div class="img-wrapper"><img src="src/img/ramen.jpg"> </div>
                         <div class="card-body">
                             <h5 class="card-title">Ramen</h5>
-                            <a href="html/recetas/ramen.html" class="btn-primary">Ver receta</a>
+                            <a href="html/recetas/ramen.html" class="boton-primario btn-primary">Ver receta</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="card">
-                        <div class="img-wrapper"><img src="img/tiramisu.jpg"></div>
+                        <div class="img-wrapper"><img src="src/img/tiramisu.jpg"></div>
                         <div class="card-body">
                             <h5 class="card-title">Tiramisú</h5>
-                            <a href="html/recetas/tiramisu.html" class="btn-primary">Ver receta</a>
+                            <a href="html/recetas/tiramisu.html" class="boton-primario btn-primary">Ver receta</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="card">
-                        <div class="img-wrapper"><img src="img/pasteldepapas.jpg"></div>
+                        <div class="img-wrapper"><img src="src/img/pasteldepapas.jpg"></div>
                         <div class="card-body">
                             <h5 class="card-title">Pastel de papas</h5>
-                            <a href="html/recetas/pasteldepapas.html" class="btn-primary">Ver receta</a>
+                            <a href="html/recetas/pasteldepapas.html" class="boton-primario btn-primary">Ver receta</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="card">
-                        <div class="img-wrapper"><img src="img/hamburguesa.jpg"></div>
+                        <div class="img-wrapper"><img src="src/img/hamburguesa.jpg"></div>
                         <div class="card-body">
                             <h5 class="card-title">Hamburguesa</h5>
-                            <a href="html/recetas/hamburguesa.html" class="btn-primary">Ver receta</a>
+                            <a href="html/recetas/hamburguesa.html" class="boton-primario btn-primary">Ver receta</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="card">
-                        <div class="img-wrapper"><img src="img/portada4.jpg"> </div>
+                        <div class="img-wrapper"><img src="src/img/portada4.jpg"> </div>
                         <div class="card-body">
                             <h5 class="card-title">Card title 5</h5>
-                            <a href="#" class="btn-primary">Ver receta</a>
+                            <a href="#" class="boton-primario btn-primary">Ver receta</a>
                         </div>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
                         <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Card title 6</h5>
-                            <a href="#" class="btn-primary">Ver receta</a>
+                            <a href="#" class="boton-primario btn-primary">Ver receta</a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                         <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Card title 7</h5>
-                            <a href="#" class="btn-primary">Ver receta</a>
+                            <a href="#" class="boton-primario btn-primary">Ver receta</a>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                         <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Card title 8</h5>
-                            <a href="#" class="btn-primary">Ver receta</a>
+                            <a href="#" class="boton-primario btn-primary">Ver receta</a>
                         </div>
                     </div>
                 </div>
@@ -168,7 +168,8 @@
             </button>
 
             <div>
-                <a href="html/recetas/content-recetas.html" class="btn-secondary"><b>Ver todas las recetas</b></a>
+                <a href="html/recetas/content-recetas.html" class="boton-secundario btn-secondary"><b>Ver todas las
+                        recetas</b></a>
             </div>
         </div>
 
@@ -184,14 +185,14 @@
                 </div>
             </div>
             <div class="contenedor-receta">
-                <img class="img" src="img/pizza.jpg" alt="">
+                <img class="img" src="src/img/pizza.jpg" alt="Imágen de pizzas">
                 <div class="receta">
                     <h3 class="title-receta"><a href="html/recetas/pizza.html">Pizza napolitana</a></h3>
                     <p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facere.</p>
                 </div>
             </div>
             <div class="contenedor-receta">
-                <img class="img" src="img/albóndigas.jpg" alt="">
+                <img class="img" src="src/img/albóndigas.jpg" alt="Imágen de albóndigas">
                 <div class="receta">
                     <h3 class="title-receta"><a href="html/recetas/albondigas.html">Albóndigas en salsa</a></h3>
                     <p class="parrafo1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, commodi!</p>
@@ -274,7 +275,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="/js/carrusel.js"></script>
+    <script src="src/js/carrusel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>

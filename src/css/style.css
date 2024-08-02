@@ -15,42 +15,29 @@ body {
 }
 
 /*Navegador*/
-.navegador {
-  background-color: transparent;
-  display: flex;
-  justify-content: space-between;
-}
-
 .navegador a {
   text-decoration: none;
-  color: white;
-  text-shadow: 0 3px 3px #000;
 }
 
 .titulo-pagina {
   cursor: pointer;
   margin-bottom: 0;
-  text-shadow: 0 3px 3px #000;
 }
 
 .titulo-pagina li {
-  font-size: 1.5rem;
-  font-family: "Sonsie One", cursive;
+  font-family: "Sonsie One", cursive, sans-serif;
   list-style: none;
 }
 
 .enlaces {
-  display: flex;
-  justify-content: flex-end;
+  padding-right: 12px;
   cursor: pointer;
   margin: 0;
 }
 
 .enlaces li {
-  font-weight: bold;
-  font-size: 1.125rem;
   text-decoration: none;
-  padding: 20px 32px;
+  padding: 0 20px;
   list-style: none;
 }
 
@@ -59,7 +46,7 @@ body {
   content: "";
   height: 3px;
   width: 0%;
-  background-color: #fff;
+  background-color: #000;
   display: block;
   transition: 0.5s ease-in-out;
 }
@@ -68,7 +55,7 @@ body {
   content: "";
   height: 3px;
   width: 100%;
-  background-color: #fff;
+  background-color: #000;
   display: block;
 }
 
@@ -153,8 +140,8 @@ body {
 
 /*Portada*/
 .header {
-  background-image: linear-gradient(to top, #13121263 0%, #373a3f56 100%),
-    url(img/portada3.jpg);
+  background-image: linear-gradient(to top, #13121257 0%, #6e717548 100%),
+    url(../img/portada-prueba.jpg);
   height: 100vh;
   padding: 0.1px;
   background-position: center;
@@ -162,31 +149,15 @@ body {
   background-attachment: fixed;
 }
 
-.contenedor {
-  width: 90%;
-  /* max-width: 1200px; */
-  overflow: hidden; /*para ocultar algo si se desborda*/
-  margin: auto; /*para que lo centre todo*/
-  padding: 60px 0;
-}
-
-.head {
-  text-align: center;
-  padding: 0;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; /*ubica el texto uno debajo del otro, se utiliza junto a flexbox display*/
+.contenedor-head {
+  background-color: #00000079;
+  height: 90vh;
+  width: 70%;
   color: white;
 }
 
 .title {
-  font-size: 5rem;
-  margin-bottom: 10px;
-  text-shadow: 5px 5px 4px rgba(20, 18, 20, 0.5);
-  border-bottom: 3px solid white;
-  padding-bottom: 10px;
+  font-size: 3.5rem;
 }
 
 /* Carrusel*/
@@ -237,10 +208,10 @@ body {
   color: #000;
 }
 
-.btn-primary {
+.boton-primario {
   border: none;
   display: block;
-  background: SaddleBrown;
+  background: #7a9c6e;
   padding: 13px;
   color: white;
   border-radius: 30px;
@@ -249,33 +220,32 @@ body {
   margin-top: 30px;
   text-align: center;
   text-decoration: none;
-  font-size: 1.125rem;
   cursor: pointer;
 }
 
-.btn-primary:hover {
+.boton-primario:hover {
   background-color: white;
-  border: 2px solid saddlebrown;
-  color: saddlebrown;
+  border: 2px solid #7a9c6e;
+  color: #7a9c6e;
   font-weight: bold;
 }
 
-.btn-secondary {
+.boton-secundario {
   display: block;
   width: 300px;
   margin: 30px auto;
   margin-top: 0;
-  border: 2px solid saddlebrown;
+  border: 2px solid #7a9c6e;
   border-radius: 30px;
   padding: 13px;
-  color: saddlebrown;
+  color: #7a9c6e;
   font-size: 1.125rem;
   text-align: center;
   text-decoration: none;
 }
 
-.btn-secondary:hover {
-  background: saddlebrown;
+.boton-secundario:hover {
+  background: #7a9c6e;
   color: #fff;
 }
 
