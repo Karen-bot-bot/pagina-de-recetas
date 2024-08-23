@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mmm delicious!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
@@ -16,12 +16,14 @@
 
     <header class="header">
 
-        <nav class="navegador navbar navbar-expand-md d-flex bg-white">
+        <nav class="navegador navbar navbar-expand-md d-flex bg-white fixed-top">
 
-            <div class="container-fluid justify-content-between ">
-                <ul class="titulo-pagina">
-                    <li><a class="d-flex navbar-brand" href="index.html">Mmm delicious!</a></li>
+            <div class="container-fluid contenedor-nav">
+                <ul class="titulo-pagina p-0">
+                    <li><a class="d-flex navbar-brand" href="index.html"><img src="src/img/Logo negro.png" alt=""></a>
+                    </li>
                 </ul>
+
                 <!-- Sidebar -->
                 <button class="ms-5 d-md-none navbar-toggler border-dark focus-ring focus-ring-dark" id="toggle-btn"
                     type="button" data-bs-theme="light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
@@ -43,7 +45,7 @@
                                 href="html/recetas/content-recetas.html">Recetas</a>
                         </div>
                         <div class="side-item"><i class='icon bx bxs-info-circle'></i><a class="item"
-                                href="html/contacto/contacto.html">Sobre mí</a></div>
+                                href="html/contacto/contacto.html">Nosotros</a></div>
                         <div class="side-item"><i class='icon bx bxs-message'></i><a class="item"
                                 href="html/contacto/contacto.html">Contacto</a></div>
                         <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="navb-button"
@@ -59,187 +61,393 @@
                 </div>
 
                 <ul class="enlaces navbar-nav collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="html/recetas/content-recetas.html">Recetas</a></li>
-                    <li><a href="html/">Sobre mí</a></li>
-                    <li><a href="html/contacto/contacto.html">Contacto</a></li>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="html/recetas/content-recetas.html">Recetas</a>
+                    </li>
+                    <li>
+                        <a href="html/">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="html/contacto/contacto.html">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </nav>
 
+        <!--Portada con buscador-->
         <div
             class="container-fluid contenedor-head p-0 m-auto d-flex flex-column justify-content-center align-items-center text-center overflow-hidden">
-            <h1 class="title-portada">¡Encuentra las recetas más deliciosas!</h1>
-            <h2>...</h2>
-        </div>
+            <h1 class="title-portada">¿No sabes qué cocinar? ¡Deja que te inspiremos!</h1>
+            <form class="position-relative">
+                <input type="search" class="buscador form-control form-control-lg ps-4 pe-5" placeholder="Buscar"
+                    aria-label="Search">
+                <i class="bi bi-search position-absolute top-50 translate-middle-y search-icon">
+                </i>
+            </form>
+
     </header>
 
     <main>
-        <div class="subtitulo">
-            <h2 class="title-main">Mis últimas recetas</h2>
-        </div>
-
-        <!-- Carrusel de cards con bootstraps -->
-        <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="src/img/ramen.jpg"> </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Shoyu Ramen</h5>
-                            <div class="iconos-card d-flex gap-4">
-                                <p class="d-flex align-items-center text-decoration-none gap-1"><i
-                                        class='bx bx-time icon-card'></i>2hr 45m</p>
-                                <p class="d-flex align-items-center text-decoration-none gap-1"> <i
-                                        class='bx bx-restaurant icon-card'></i>Fácil</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="src/img/tiramisu.jpg"></div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Tiramisú</h5>
-                            <div class="iconos-card d-flex gap-4">
-                                <p class="d-flex align-items-center text-decoration-none gap-1"><i
-                                        class='bx bx-time icon-card'></i>2hr 45m</p>
-                                <p class="d-flex align-items-center text-decoration-none gap-1"> <i
-                                        class='bx bx-restaurant icon-card'></i>Fácil</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="src/img/pasteldepapas.jpg"></div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Pastel de papas</h5>
-                            <div class="iconos-card d-flex gap-4">
-                                <p class="d-flex align-items-center text-decoration-none gap-1"><i
-                                        class='bx bx-time icon-card'></i>2hr 45m</p>
-                                <p class="d-flex align-items-center text-decoration-none gap-1"> <i
-                                        class='bx bx-restaurant icon-card'></i>Fácil</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="src/img/hamburguesa.jpg"></div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Hamburguesa</h5>
-                            <div class="iconos-card d-flex gap-4">
-                                <p class="d-flex align-items-center text-decoration-none gap-1"><i
-                                        class='bx bx-time icon-card'></i>2hr 45m</p>
-                                <p class="d-flex align-items-center text-decoration-none gap-1"> <i
-                                        class='bx bx-restaurant icon-card'></i>Fácil</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="src/img/portada4.jpg"> </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Card title 5</h5>
-                            <div class="iconos-card d-flex gap-4">
-                                <p class="d-flex align-items-center text-decoration-none gap-1"><i
-                                        class='bx bx-time icon-card'></i>2hr 45m</p>
-                                <p class="d-flex align-items-center text-decoration-none gap-1"> <i
-                                        class='bx bx-restaurant icon-card'></i>Fácil</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Card title 6</h5>
-                            <div class="iconos-card d-flex gap-4">
-                                <p class="d-flex align-items-center text-decoration-none gap-1"><i
-                                        class='bx bx-time icon-card'></i>2hr 45m</p>
-                                <p class="d-flex align-items-center text-decoration-none gap-1"> <i
-                                        class='bx bx-restaurant icon-card'></i>Fácil</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Card title 7</h5>
-                            <div class="iconos-card d-flex gap-4">
-                                <p class="d-flex align-items-center text-decoration-none gap-1"><i
-                                        class='bx bx-time icon-card'></i>2hr 45m</p>
-                                <p class="d-flex align-items-center text-decoration-none gap-1"> <i
-                                        class='bx bx-restaurant icon-card'></i>Fácil</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Card title 8</h5>
-                            <div class="iconos-card d-flex gap-4">
-                                <p class="d-flex align-items-center text-decoration-none gap-1"><i
-                                        class='bx bx-time icon-card'></i>2hr 45m</p>
-                                <p class="d-flex align-items-center text-decoration-none gap-1"> <i
-                                        class='bx bx-restaurant icon-card'></i>Fácil</p>
-                            </div>
-                        </div>
-                    </div>
+        <section>
+            <!--Categorías-->
+            <div class="container d-flex encabezado-de-seccion justify-content-between p-0 pb-3">
+                <h2 class="subtitulo">Categorías</h2>
+                <div class="d-flex align-items-center justify-content-center m-0">
+                    <a class="boton-secundario btn ">Otras categorías</a>
                 </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-
-            <div>
-                <a href="html/recetas/content-recetas.html" class="boton-secundario btn-secondary"><b>Ver todas las
-                        recetas</b></a>
-            </div>
-        </div>
-
-        <!-- Sección recetas favoritas -->
-        <section class="recetas-favoritas">
-            <h2 class="title-main">Mis recetas favoritas</h2>
-            <div class="contenedor-receta">
-                <img class="img" src="img/cheesecake.jpg" alt="">
-                <div class="receta">
-                    <h3 class="title-receta"> <a href="html/recetas/cheesecake.html">Cheesecake de frutos rojos</a>
-                    </h3>
-                    <p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, accusamus.</p>
+            <div class="container-fluid d-flex gap-3 p-0 justify-content-between">
+                <div class="circle">
+                    <img src="src/img/pasta.jpg" alt="">
+                    <p class="text-center justify-content-end my-1">Pastas y arroz</p>
                 </div>
-            </div>
-            <div class="contenedor-receta">
-                <img class="img" src="src/img/pizza.jpg" alt="Imágen de pizzas">
-                <div class="receta">
-                    <h3 class="title-receta"><a href="html/recetas/pizza.html">Pizza napolitana</a></h3>
-                    <p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facere.</p>
+                <div class="circle">
+                    <img src="src/img/pollo.jpg" alt="">
+                    <p class="text-center my-1">Pollo y carnes</p>
                 </div>
-            </div>
-            <div class="contenedor-receta">
-                <img class="img" src="src/img/albóndigas.jpg" alt="Imágen de albóndigas">
-                <div class="receta">
-                    <h3 class="title-receta"><a href="html/recetas/albondigas.html">Albóndigas en salsa</a></h3>
-                    <p class="parrafo1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, commodi!</p>
+                <div class="circle">
+                    <img src="src/img/panaderia.jpg" alt="">
+                    <p class="text-center my-1">Panadería</p>
                 </div>
+                <!--
+                <div class="circle">
+                    <img src="src/img/ensalada.jpg" alt="">
+                    <p class="text-center">Ensaladas</p>
+                </div> -->
+                <div class="circle">
+                    <img src="src/img/sopa.jpg" alt="">
+                    <p class="text-center my-1">Sopas</p>
+                </div>
+                <div class="circle">
+                    <img src="src/img/veggie.jpg" alt="">
+                    <p class="text-center my-1">Vegetariano</p>
+                </div>
+                <div class="circle">
+                    <img src="src/img/postre.jpg" alt="">
+                    <p class="text-center my-1">Postres</p>
+                </div>
+                <div class="circle">
+                    <img src="src/img/sanguche.jpg" alt="">
+                    <p class="text-center my-1">Sándwiches</p>
+                </div>
+                <!--
+                <div class="circle">
+                    <img src="src/img/salsa.jpg" alt="">
+                    <p class="text-center">Salsas</p>
+                </div>-->
             </div>
         </section>
+
+        <!--
+        <section>
+            <div class="container-fluid gallery d-flex">
+                <div class="row">
+                    <div class="row col position-relative overflow-hidden">
+                        <img class="img-gallery" src="src/img/albóndigas.jpg" alt="">
+                        <div class="overlay overflow-hidden p-0">
+                            <p>Texto sobre la imagen grande</p>
+                        </div>
+                    </div>
+                    <div class="row col p-0 align-items-stretch">
+                        <div class="row">
+                            <div class=" col-md-6 position-relative p-0">
+                                <img class="img-gallery" src="src/img/burger.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Texto sobre la imagen grande</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 position-relative p-0">
+                                <img class="img-gallery" src="src/img/cheesecake.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Texto sobre la imagen grande</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 position-relative p-0">
+                                <img class="img-gallery" src="src/img/pizza.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Texto sobre la imagen grande</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 position-relative p-0">
+                                <img class="img-gallery" src="src/img/hamburguesa.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Texto sobre la imagen grande</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section>
+            <div>
+                <div class="container d-flex encabezado-de-seccion justify-content-between p-0 pb-3">
+                    <h2 class="subtitulo">Últimas recetas</h2>
+                    <div class="d-flex align-items-center justify-content-center m-0">
+                        <a class="boton-secundario btn ">Todas las
+                            recetas</a>
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-between p-0 gap-3">
+                    <div class="card tarjeta-receta" style="height: 20rem; width: 18rem;">
+                        <img src="src/img/sorrentinos.webp" class="card-img-top card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-text m-0 py-2">Sorrentinos</h5>
+                            <div class="extra-info">
+                                <div class="d-flex justify-content-between iconos-card">
+                                    <p class="d-flex align-items-center text-decoration-none gap-1">
+                                        <i class='bx bx-time icon-card'></i> 2hr 45m
+                                    </p>
+                                    <p class="d-flex align-items-center text-decoration-none gap-1">
+                                        <i class='bx bx-restaurant icon-card'></i> Fácil
+                                    </p>
+                                </div>
+                                <div>
+                                    <a class="boton-primario btn">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card tarjeta-receta" style="width: 18rem; height: 20rem;">
+                        <img src="src/img/brownie.jpg" class="card-img-top card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-text m-0 py-2">Brownie</h5>
+                            <div class="extra-info">
+                                <div class="d-flex justify-content-between iconos-card">
+                                    <p class="d-flex align-items-center text-decoration-none gap-1">
+                                        <i class='bx bx-time icon-card'></i> 2hr 45m
+                                    </p>
+                                    <p class="d-flex align-items-center text-decoration-none gap-1">
+                                        <i class='bx bx-restaurant icon-card'></i> Fácil
+                                    </p>
+                                </div>
+                                <div>
+                                    <a class="boton-primario btn">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card tarjeta-receta" style="width: 18rem; height: 20rem;">
+                        <img src="src/img/empanadas.webp" class="card-img-top card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-text m-0 py-2">Empanadas salteñas</h5>
+                            <div class="extra-info">
+                                <div class="d-flex justify-content-between iconos-card">
+                                    <p class="d-flex align-items-center text-decoration-none gap-1">
+                                        <i class='bx bx-time icon-card'></i> 2hr 45m
+                                    </p>
+                                    <p class="d-flex align-items-center text-decoration-none gap-1">
+                                        <i class='bx bx-restaurant icon-card'></i> Fácil
+                                    </p>
+                                </div>
+                                <div>
+                                    <a class="boton-primario btn">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card tarjeta-receta" style="width: 18rem; height: 20rem;">
+                        <img src="src/img/chicken-teriyaki.jpg" class="card-img-top card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-text m-0 py-2">Pollo teriyaki</h5>
+                            <div class="extra-info">
+                                <div class="d-flex justify-content-between iconos-card">
+                                    <p class="d-flex align-items-center text-decoration-none gap-1">
+                                        <i class='bx bx-time icon-card'></i> 2hr 45m
+                                    </p>
+                                    <p class="d-flex align-items-center text-decoration-none gap-1">
+                                        <i class='bx bx-restaurant icon-card'></i> Fácil
+                                    </p>
+                                </div>
+                                <div>
+                                    <a class="boton-primario btn">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        <!-- RECETAS -->
+        <section>
+            <div class="container d-flex encabezado-de-seccion justify-content-between p-0 pb-3">
+                <h2 class="subtitulo">Recetas destacadas</h2>
+                <div class="d-flex align-items-center justify-content-center m-0">
+                    <a class="boton-secundario btn ">Todas las recetas</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row justify-content-around gap-4">
+                    <div class="col mb-4 p-0 d-flex justify-content-center">
+                        <div class="card card-destacada">
+                            <div class="img-wrapper">
+                                <img src="src/img/shoyu-ramen.jpg" class="d-block" alt="Shoyu Ramen">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-0 text-center">Shoyu Ramen</h6>
+                                <div class="iconos-card d-flex justify-content-between">
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-time icon-card'></i>2hr 45m
+                                    </p>
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-restaurant icon-card'></i>Fácil
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4 p-0 d-flex justify-content-center">
+                        <div class="card card-destacada">
+                            <div class="img-wrapper">
+                                <img src="src/img/tiramisu.jpg" class="d-block" alt="Tiramisú">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-0 text-center">Tiramisú</h6>
+                                <div class="iconos-card d-flex justify-content-between">
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-time icon-card'></i>2hr 45m
+                                    </p>
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-restaurant icon-card'></i>Fácil
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4 p-0 d-flex justify-content-center">
+                        <div class="card card-destacada">
+                            <div class="img-wrapper">
+                                <img src="src/img/pasteldepapas.jpg" class="d-block" alt="Pastel de papas">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-0 text-center">Pastel de papas</h6>
+                                <div class="iconos-card d-flex justify-content-between">
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-time icon-card'></i>2hr 45m
+                                    </p>
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-restaurant icon-card'></i>Fácil
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4 p-0 d-flex justify-content-center">
+                        <div class="card card-destacada">
+                            <div class="img-wrapper">
+                                <img src="src/img/burger.jpg" class="d-block" alt="Hamburguesa">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-0 text-center">Hamburguesa con cheddar y bacon</h6>
+                                <div class="iconos-card d-flex justify-content-between">
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-time icon-card'></i>2hr 45m
+                                    </p>
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-restaurant icon-card'></i>Fácil
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4 p-0 d-flex justify-content-center">
+                        <div class="card card-destacada">
+                            <div class="img-wrapper">
+                                <img src="src/img/cookies.webp" class="d-block" alt="Card title 5">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-0 text-center">Galletas con chips de chocolate</h6>
+                                <div class="iconos-card d-flex justify-content-between">
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-time icon-card'></i>2hr 45m
+                                    </p>
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-restaurant icon-card'></i>Fácil
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4 p-0 d-flex justify-content-center">
+                        <div class="card card-destacada">
+                            <div class="img-wrapper">
+                                <img src="src/img/ñoquis.webp" class="d-block" alt="Card title 6">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-0 text-center">Ñoquis con salsa de tomates
+                                </h6>
+                                <div class="iconos-card d-flex justify-content-between">
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-time icon-card'></i>2hr 45m
+                                    </p>
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-restaurant icon-card'></i>Fácil
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4 p-0 d-flex justify-content-center">
+                        <div class="card card-destacada">
+                            <div class="img-wrapper">
+                                <img src="src/img/pizza.jpg" class="d-block" alt="Card title 7">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-0 text-center">Pizza napolitana, leudado 24hs</h6>
+                                <div class="iconos-card d-flex justify-content-between">
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-time icon-card'></i>2hr 45m
+                                    </p>
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-restaurant icon-card'></i>Fácil
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4 p-0 d-flex justify-content-center">
+                        <div class="card card-destacada">
+                            <div class="img-wrapper">
+                                <img src="src/img/red-velvet.webp" class="d-block" alt="Card title 8">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-0">Red Velvet</h6>
+                                <div class="iconos-card d-flex justify-content-between">
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-time icon-card'></i>1hr 20min
+                                    </p>
+                                    <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                        <i class='bx bx-restaurant icon-card'></i>Medio
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Suscribete a nuestro Newsletters</h2>
+        </section>
+
+
 
         <!--  Presentación (¿Quién soy?) -->
         <!-- <section class="presentacion">

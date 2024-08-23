@@ -9,42 +9,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../src/css/style.css">
 </head>
 
 <body>
-    <header class="header albondigas">
-        <nav class="navegador navbar navbar-expand-md p-0">
-            <div class="container-fluid">
-                <ul class="titulo-pagina">
-                    <li><a class="d-sm-inline-block" href="../../index.html">Mmm delicious!</a></li>
+    <header class="albondiga">
+
+        <nav class="navegador navbar navbar-expand-md d-flex bg-white fixed-top">
+
+            <div class="container-fluid contenedor-nav">
+                <ul class="titulo-pagina p-0">
+                    <li><a class="d-flex navbar-brand" href="index.html"><img src="../../src/img/Logo negro.png"
+                                alt=""></a>
+                    </li>
                 </ul>
 
                 <!-- Sidebar -->
-                <button class="d-md-none navbar-toggler border-light focus-ring focus-ring-light" id="toggle-btn"
-                    type="button" data-bs-theme="dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+                <button class="ms-5 d-md-none navbar-toggler border-dark focus-ring focus-ring-dark" id="toggle-btn"
+                    type="button" data-bs-theme="light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
                     aria-controls="offcanvasResponsive"><span class="navbar-toggler-icon"></span></button>
 
                 <div class="sidebar offcanvas-md offcanvas-start" tabindex="-1" id="offcanvasResponsive"
                     aria-labelledby="offcanvasResponsiveLabel">
                     <div class="offcanvas-header mt-0 ps-0 m-4">
-                        <a class="offcanvas-title" id="offcanvasResponsiveLabel">Mmm delicious!</a>
+                        <a href="index.html" class="offcanvas-title" id="offcanvasResponsiveLabel">Mmm delicious!</a>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
                     </div>
 
-                    <div class="offcanvas-body mt-4 p-0 d-md-none d-flex flex-column">
+                    <div class="offcanvas-body mt-3 p-0 d-md-none d-flex flex-column">
                         <div class="side-item"><i class='icon bx bxs-home-alt-2'></i><a class="item"
-                                href="../../index.html">Inicio</a></div>
+                                href="index.html">Inicio</a></div>
                         <div class="side-item">
                             <i class='icon bx bxs-bowl-hot'></i><a class="item "
-                                href="content-recetas.html">Recetas</a>
+                                href="html/recetas/content-recetas.html">Recetas</a>
                         </div>
-                        <div class="side-item">
-                            <i class='icon bx bxs-info-circle'></i><a class="item " href="/">Sobre mí</a>
-                        </div>
+                        <div class="side-item"><i class='icon bx bxs-info-circle'></i><a class="item"
+                                href="html/contacto/contacto.html">Sobre mí</a></div>
                         <div class="side-item"><i class='icon bx bxs-message'></i><a class="item"
-                                href="../contacto/contacto.html">Contacto</a></div>
+                                href="html/contacto/contacto.html">Contacto</a></div>
                         <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="navb-button"
                             type="button">Hablemos!</a>
                     </div>
@@ -57,85 +60,132 @@
                     </div>
                 </div>
 
-                <ul class="enlaces navbar-nav collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <li><a href="../../index.html">Inicio</a></li>
-                    <li><a href="content-recetas.html">Recetas</a></li>
-                    <li><a href="/html/">Recetas</a></li>
-                    <li><a href="../contacto/contacto.html">Contacto</a></li>
+                <ul class="enlaces navbar-nav collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="html/recetas/content-recetas.html">Recetas</a>
+                    </li>
+                    <li>
+                        <a href="html/">Sobre mí</a>
+                    </li>
+                    <li>
+                        <a href="html/contacto/contacto.html">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </nav>
 
-        <div class="contenedor head">
-            <h1 class="title">Albóndigas en salsa</h1>
+        <div class="container-fluid portada-receta row">
+            <div class="foto-receta col p-0">
+                <img src="../../src/img/albóndigas.jpg" alt="">
+            </div>
+            <div class="col info-de-receta p-0 d-flex flex-column align-items-center justify-content-center">
+                <h3 class="text-center">Albóndigas en salsa</h3>
+                <p>Como indica la etimología de la palabra, <b>las albóndigas son una receta de origen árabe
+                        (al-bunduqa, ‘la bola’)</b> que se
+                    ha
+                    transmitido de
+                    generación en generación desde hace siglos . Las albóndigas son uno de esos
+                    platos
+                    de toda la vida
+                    cuyo ingrediente principal es la carne picada, y que gustan a pequeños y mayores.
+                </p>
+            </div>
         </div>
+
     </header>
 
-    <section class="card-1">
-        <div class="contenedor-recetario">
-            <h2 class="info">Sobre esta receta:</h2>
-            <p>Como indica la etimología de la palabra, <b>las albóndigas son una receta de origen árabe</b> que se ha
-                transmitido de
-                generación en generación desde hace siglos (al-bunduqa, ‘la bola’). Las albóndigas son un de esos platos
-                de toda la vida
-                cuyo ingrediente principal es la carne picada (aunque también pueden cocinarse albóndigas de pescado, o
-                albóndigas
-                veganas), y que gustan a pequeños y mayores.
-                <br>
-                Hay quien las prefieren con perejil, sin perejil, con pimienta, con salsa de tomate… Y, hay quien las
-                acompaña de arroz,
-                patatas o verduras… No hay una única receta para preparar las albóndigas pero sí unas directrices
-                básicas para su
-                elaboración.
-
-            </p>
-        </div>
-    </section>
-
-    <section class="card-1">
+    <section>
         <div class="contenedor-recetario">
             <h2 class="ingredientes">Ingredientes</h2>
             <p><b>Para las albóndigas:</b></p>
-            <ul>
-                <li>500 gramos de carne picada de ternera</li>
-                <li>1 diente de ajo</li>
-                <li>Perejil picado</li>
-                <li>Sal</li>
-                <li>Pimienta</li>
-                <li>1 yema de huevo</li>
-                <li>3 cucharadas de pan rallado (puede ser sin gluten y serán aptas para celíacos)</li>
-                <li>Harina</li>
-                <li>4 cucharadas de leche</li>
-            </ul>
-            <p><b>Para la salsa:</b></p>
-            <ul>
-                <li>2 cucharadas de aceite de oliva</li>
-                <li>1 cebolla pequeña</li>
-                <li>1diente de ajo</li>
-                <li>1 cucharada de harina</li>
-                <li>1 vaso de vino blanco</li>
-                <li>2 cucharones de caldo</li>
-                <li>1 hoja de laurel</li>
-                <li>Sal</li>
-            </ul>
+            <ul class="lista-ingredientes">
+                <li>
+                    <span class="checkbox"><i class='bx bx-checkbox'></i></span>
+                    <span class="item-text">500 gramos de carne picada</span>
+                </li>
+                <li>
+                    <span class="checkbox"><i class='bx bx-check'></i></span>
+                    <span class="item-text">1 diente de ajo</span>
+                </li>
+                <li>
+                    <span class="checkbox"><i class='bx bx-check'></i></span>
+                    <span class="item-text">1 cucharada de harina</span>
+                </li>
+                <li>
+                    <span class="checkbox"><i class='bx bx-check'></i></span>
+                    <span class="item-text">Sal</span>
+                </li>
+                <li>
+                    <span class="checkbox"><i class='bx bx-check'></i></span>
+                    <span class="item-text">Pimienta</span>
+                </li>
+                <li>
+                    <span class="checkbox"><i class='bx bx-check'></i></span>
+                    <span class="item-text">1 huevo</span>
+                </li>
+                <li>
+                    <span class="checkbox"><i class='bx bx-check'></i></span>
+                    <span class="item-text">3 cucharadas de pan rallado</span>
+                </li>
+                <li>
+                    <span class="checkbox"><i class='bx bx-check'></i></span>
+                    <span class="item-text">Harina</span>
+                </li>
+                <li>
+                    <span class="checkbox"><i class='bx bx-check'></i></span>
+                    <span class="item-text">4 cucharadas de leche</span>
+                </li>
+                <p><b>Para la salsa:</b>
+                <ul class="lista-ingrediente">
+                    <li>
+                        <span class="checkbox"><i class='bx bx-check'></i></span>
+                        <span class="item-text">2 cucharadas de aceite</span>
+                    </li>
+                    <li>
+                        <span class="checkbox"><i class='bx bx-check'></i></span>
+                        <span class="item-text">1 cebolla</span>
+                    </li>
+                    <li>
+                        <span class="checkbox"><i class='bx bx-check'></i></span>
+                        <span class="item-text">1 diente de ajo</span>
+                    </li>
+                    <li>
+                        <span class="checkbox"><i class='bx bx-check'></i></span>
+                        <span class="item-text">1 cucharada de harina</span>
+                    </li>
+                    <li>
+                        <span class="checkbox"><i class='bx bx-check'></i></span>1 vaso de vino blanco</li>
+                    <li>
+                        <span class="checkbox"><i class='bx bx-check'></i></span>2 cucharones de caldo</li>
+                    <li>
+                        <span class="checkbox"><i class='bx bx-check'></i></span>1 hoja de laurel</li>
+                    <li><span class="checkbox"><i class='bx bx-check'></i></span>Sal</li>
+                </ul>
         </div>
     </section>
 
-    <section class="card-1">
+    <section>
         <div class="contenedor-recetario">
             <h2 class="pasos">Preparación</h2>
             <p><b>Paso a paso:</b></p>
             <ol>
                 <li>Pica la cebolla y el diente de ajo.</li>
-                <li>En un bol grande mezcla la carne picada con la leche, la yema del huevo, el pan rallado, la cebolla
+                <li>En un bol grande mezcla la carne picada con la leche, la yema del huevo, el pan rallado, la
+                    cebolla
                     picada, el perejil, la sal y la pimienta. Deja reposar unos diez minutos.</li>
-                <li>Con la mezcla, forma bolas pequeñas (del tamaño de una bola de ping pong), pásalas por harina y fríe
+                <li>Con la mezcla, forma bolas pequeñas (del tamaño de una bola de ping pong), pásalas por harina y
+                    fríe
                     a fuego medio hasta que queden doradas (no tienen que quedar muy hechas).</li>
                 <li>Reserva las albóndigas en una cazuela.</li>
                 <li>En el aceite de la sartén rehoga el diente de ajo y la cebolla. Cuando la cebolla esté pochada,
-                    añade una cucharada de harina y dale un par de vueltas. Agrega el vaso de vino y dos cucharones de
+                    añade una cucharada de harina y dale un par de vueltas. Agrega el vaso de vino y dos cucharones
+                    de
                     caldo.</li>
-                <li>Añade la hoja de laurel salpimenta al gusto, y si es necesario, añade algo más de caldo. Deja cocer
+                <li>Añade la hoja de laurel salpimenta al gusto, y si es necesario, añade algo más de caldo. Deja
+                    cocer
                     unos minutos hasta lograr la consistencia deseada.</li>
                 <li>Retira la hoja de laurel y pasa todo por la batidora.</li>
                 <li>Vierte la salsa sobre las albóndigas y deja cocer unos minutos más a fuego lento.</li>
