@@ -14,13 +14,13 @@
 
 <body>
 
-    <header class="header">
+    <header class="header header-index">
 
         <nav class="navegador navbar navbar-expand-md d-flex bg-white fixed-top">
 
             <div class="container-fluid contenedor-nav">
                 <ul class="titulo-pagina p-0">
-                    <li><a class="d-flex navbar-brand" href="index.html"><img src="src/img/Logo negro.png" alt=""></a>
+                    <li><a class="d-flex navbar-brand" href="index.html"><img src="src/img/logo-negro.svg" alt=""></a>
                     </li>
                 </ul>
 
@@ -32,7 +32,7 @@
                 <div class="sidebar offcanvas-md offcanvas-start" tabindex="-1" id="offcanvasResponsive"
                     aria-labelledby="offcanvasResponsiveLabel">
                     <div class="offcanvas-header mt-0 ps-0 m-4">
-                        <a href="index.html" class="offcanvas-title" id="offcanvasResponsiveLabel">Mmm delicious!</a>
+                        <a href="index.html" class="offcanvas-title" id="offcanvasResponsiveLabel">Delicious!</a>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
                     </div>
@@ -45,7 +45,7 @@
                                 href="html/recetas/content-recetas.html">Recetas</a>
                         </div>
                         <div class="side-item"><i class='icon bx bxs-info-circle'></i><a class="item"
-                                href="html/contacto/contacto.html">Nosotros</a></div>
+                                href="html/contacto/contacto.html">Quiénes somos</a></div>
                         <div class="side-item"><i class='icon bx bxs-message'></i><a class="item"
                                 href="html/contacto/contacto.html">Contacto</a></div>
                         <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="navb-button"
@@ -68,7 +68,7 @@
                         <a href="html/recetas/content-recetas.html">Recetas</a>
                     </li>
                     <li>
-                        <a href="html/">Nosotros</a>
+                        <a href="html/">Quiénes somos</a>
                     </li>
                     <li>
                         <a href="html/contacto/contacto.html">Contacto</a>
@@ -79,7 +79,7 @@
 
         <!--Portada con buscador-->
         <div
-            class="container-fluid contenedor-head p-0 m-auto d-flex flex-column justify-content-center align-items-center text-center overflow-hidden">
+            class="container-fluid w-50 h-100 gap-3 p-0 m-auto d-flex flex-column justify-content-center align-items-center text-center overflow-hidden">
             <h1 class="title-portada">¿No sabes qué cocinar? ¡Deja que te inspiremos!</h1>
             <form class="position-relative">
                 <input type="search" class="buscador form-control form-control-lg ps-4 pe-5" placeholder="Buscar"
@@ -87,7 +87,7 @@
                 <i class="bi bi-search position-absolute top-50 translate-middle-y search-icon">
                 </i>
             </form>
-
+        </div>
     </header>
 
     <main>
@@ -142,54 +142,13 @@
             </div>
         </section>
 
-        <!--
-        <section>
-            <div class="container-fluid gallery d-flex">
-                <div class="row">
-                    <div class="row col position-relative overflow-hidden">
-                        <img class="img-gallery" src="src/img/albóndigas.jpg" alt="">
-                        <div class="overlay overflow-hidden p-0">
-                            <p>Texto sobre la imagen grande</p>
-                        </div>
-                    </div>
-                    <div class="row col p-0 align-items-stretch">
-                        <div class="row">
-                            <div class=" col-md-6 position-relative p-0">
-                                <img class="img-gallery" src="src/img/burger.jpg" alt="">
-                                <div class="overlay">
-                                    <p>Texto sobre la imagen grande</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 position-relative p-0">
-                                <img class="img-gallery" src="src/img/cheesecake.jpg" alt="">
-                                <div class="overlay">
-                                    <p>Texto sobre la imagen grande</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 position-relative p-0">
-                                <img class="img-gallery" src="src/img/pizza.jpg" alt="">
-                                <div class="overlay">
-                                    <p>Texto sobre la imagen grande</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 position-relative p-0">
-                                <img class="img-gallery" src="src/img/hamburguesa.jpg" alt="">
-                                <div class="overlay">
-                                    <p>Texto sobre la imagen grande</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
+        <!--SECCIÓN RECETAS RECIENTES-->
         <section>
             <div>
                 <div class="container d-flex encabezado-de-seccion justify-content-between p-0 pb-3">
-                    <h2 class="subtitulo">Últimas recetas</h2>
+                    <h2 class="subtitulo">Recetas recientes</h2>
                     <div class="d-flex align-items-center justify-content-center m-0">
-                        <a class="boton-secundario btn ">Todas las
+                        <a href="#" class="boton-secundario btn ">Todas las
                             recetas</a>
                     </div>
                 </div>
@@ -197,7 +156,7 @@
                     <div class="card tarjeta-receta" style="height: 20rem; width: 18rem;">
                         <img src="src/img/sorrentinos.webp" class="card-img-top card-img" alt="...">
                         <div class="card-body">
-                            <h5 class="card-text m-0 py-2">Sorrentinos</h5>
+                            <h5 class="card-text m-0 py-2">Sorrentinos de jamón y queso</h5>
                             <div class="extra-info">
                                 <div class="d-flex justify-content-between iconos-card">
                                     <p class="d-flex align-items-center text-decoration-none gap-1">
@@ -217,7 +176,7 @@
                     <div class="card tarjeta-receta" style="width: 18rem; height: 20rem;">
                         <img src="src/img/brownie.jpg" class="card-img-top card-img" alt="...">
                         <div class="card-body">
-                            <h5 class="card-text m-0 py-2">Brownie</h5>
+                            <h5 class="card-text m-0 py-2">Brownie de chocolate</h5>
                             <div class="extra-info">
                                 <div class="d-flex justify-content-between iconos-card">
                                     <p class="d-flex align-items-center text-decoration-none gap-1">
@@ -440,86 +399,128 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
+        <!--NOVEDADES-->
         <section>
-            <h2>Suscribete a nuestro Newsletters</h2>
+            <h2 class="pb-3">Consejos</h2>
+            <div class="container gallery w-100 p-0">
+                <div class="row justify-content-center"
+                    style="border: 2px solid #f0eeed; margin-right: -4px; margin-left: -4px;">
+                    <div class="col position-relative overflow-hidden px-0"
+                        style="width: 100%; border: 2px solid #f0eeed;">
+                        <a
+                            href="https://www.gourmet.cl/como-hacer-mayonesa-casera-descubre-tres-formas-para-prepararla/">
+                            <img class="img-gallery overflow-hidden" src="src/img/mayonesa-casera.webp" alt="">
+                            <div class="overlay p-0"></div>
+                            <div class="text-overlay d-flex ps-4 pb-4 justify-content-center">
+                                <h3>¿Cómo hacer mayonesa casera? Descubre tres
+                                    formas para prepararla</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col p-0 w-100">
+                        <div class="row m-0">
+                            <div class=" col-md-6 position-relative p-0" style="border: 2px solid #f0eeed;">
+                                <a href="https://www.gourmet.cl/como-hacer-fruta-deshidratada-sigue-nuestros-tips/">
+                                    <img class="img-gallery" src="src/img/fruta-deshidratada.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-overlay d-flex justify-content-center px-3 pb-3">
+                                        <h5>¿Cómo hacer fruta deshidratada? Sigue nuestros tips</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 position-relative p-0" style="border: 2px solid #f0eeed;">
+                                <img class="img-gallery" src="src/img/harina.jpg" alt="">
+                                <div class="overlay"></div>
+                                <div class="text-overlay d-flex justify-content-center px-3 pb-3">
+                                    <h5>¿Qué es la harina de fuerza y cómo utilizarla?</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6 position-relative p-0" style="border: 2px solid #f0eeed;">
+                                <a href="https://www.cashfresh.es/tips-para-conservar-las-verduras-mas-tiempo/">
+                                    <img class="img-gallery" src="src/img/verduras.jpg" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="text-overlay d-flex justify-content-center px-3 pb-3">
+                                        <h5>Tips para conservar las verduras por más tiempo</h6>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 position-relative p-0" style="border: 2px solid #f0eeed;">
+                                <img class="img-gallery" src="src/img/papas-fritas.jpg" alt="">
+                                <div class="overlay"></div>
+                                <div class="text-overlay d-flex justify-content-center px-3 pb-3">
+                                    <h5>¿Cómo hacer papas fritas súper crujientes?</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-
-
-        <!--  Presentación (¿Quién soy?) -->
-        <!-- <section class="presentacion">
-            <h2 class="title-main">¿Quién soy?</h2>
-            <div class="contenido">
-                <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet explicabo nisi ducimus
-                    ea.
-                    Ad
-                    optio perferendis illo deserunt totam ducimus rem eum nam saepe, enim suscipit eaque ipsa magni
-                    cupiditate.
-                    <br>
-                    Esse necessitatibus repellendus commodi voluptatibus nobis tenetur, nisi blanditiis recusandae dicta
-                    cum
-                    fugit nemo magni quas, quam harum quod enim veritatis sequi qui a ipsum facere quisquam aperiam
-                    incidunt.
-                    Est. <br>
-                    Fugit architecto voluptates distinctio beatae, ducimus et, rem quis porro corporis ipsum qui
-                    expedita!
-                    Debitis placeat velit doloribus atque perspiciatis commodi sequi qui reiciendis distinctio, quam,
-                    odit
-                    magnam dignissimos eos! <br>
-                </p>
-                <img class="mujer" src="/img/mujer.png" alt="">
+        <!--SUSCRIPCIÓN-->
+        <section class="newsletter" style="height: 80vh;">
+            <div class="container d-flex flex-column my-0 px-0 py-4 mt-4"
+                style="height:50vh; background-color: #F29F05; border-radius: 8px;">
+                <div class="d-flex flex-column m-auto my-3" style="width: 60%;">
+                    <h2 class="my-3 text-center">Suscríbete a nuestro Newsletters</h2>
+                    <p class="text-left">Recibe cada semana nuestras recetas favoritas y tips de cocina que te
+                        harán
+                        disfrutar mucho más cocinar.</p>
+                </div>
+                <div class="d-flex w-80 m-auto gap-3 mt-0" style="width: 60%;;">
+                    <input class="input-newsletter" type="text" placeholder="Correo electrónico">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="#" class="boton-primario text-decoration-none">Suscribirme</a>
+                    </div>
+                </div>
             </div>
-        </section> -->
+        </section>
+
     </main>
 
     <!-- Footer  -->
     <footer class="footer">
-        <div class="container-footer">
+        <div
+            class="container-fluid d-flex flex-column align-items-center justify-content-between h-100 w-100 pt-4 px-0">
             <div class="nombre-pagina">
                 <ul class="titulo-pagina">
-                    <li><a href="index.html"></a>Mmm delicious!</li>
+                    <li><a href="index.html"><img src="src/img/logo-blanco.svg" style="height: 100px;" alt=""></a></li>
                 </ul>
             </div>
-            <div class="cont">
-                <div class="contacto">
-                    <h4>Contacto:</h4>
-                    <p>delicious@gmail.com</p>
-                    <p>+54 261-2030401</p>
-                </div>
-                <div class="explore">
-                    <h4>Explore:</h4>
-                    <a href="index.html">Inicio</a>
-                    <a href="html/recetas/content-recetas.html">Recetas</a>
-                    <a href="/">Sobre mí</a>
-                    <a href="html/contacto/contacto.html">Contacto</a>
-                </div>
+
+            <div class="explore d-flex gap-3">
+                <a href="index.html">Inicio</a>
+                <a href="html/recetas/content-recetas.html">Recetas</a>
+                <a href="/">Sobre mí</a>
+                <a href="html/contacto/contacto.html">Contacto</a>
             </div>
-            <div class="social-media">
-                <div class="title-column-social">
-                    <h4 class="follow">Sígueme:</h4>
-                </div>
-                <div class="body-column-social">
-                    <a href="https://www.youtube.com/" class="social-media-icon youtube">
-                        <i class='bx bxl-youtube'></i>
-                    </a>
-                    <a href="https://es-la.facebook.com/" class="social-media-icon">
-                        <i class='bx bxl-facebook'></i>
-                    </a>
-                    <a href="https://twitter.com" class="social-media-icon twitter">
-                        <i class='bx bxl-twitter'></i>
-                    </a>
-                    <a href="https://www.instagram.com/" class="social-media-icon">
-                        <i class='bx bxl-instagram'></i>
-                    </a>
-                </div>
+
+            <div class="social-media d-flex gap-3">
+                <a href="https://www.youtube.com/" class="social-media-icon">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+                <a href="https://es-la.facebook.com/" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://twitter.com" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.instagram.com/" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+
+            <div class="derechos-de-autor" style="width: 100%;">
+                <p class="copyright mt-3 text-center" style="font-size: 14px;">©Delicious! - Todos los
+                    derechos
+                    reservados.
+                </p>
             </div>
         </div>
-        <div class="derechos">
-            <p class="copyright">©2023 Mmm delicious! - Todos los derechos reservados.</p>
-        </div>
+
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"

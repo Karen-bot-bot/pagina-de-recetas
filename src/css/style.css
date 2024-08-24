@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Sonsie+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -13,11 +12,17 @@ html {
 }
 
 body {
-  background: #f0eeed;
+  background: #eaeee7;
 }
 
 section {
   padding: 30px 120px 60px 120px;
+}
+
+section h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 /*Navegador*/
@@ -65,7 +70,7 @@ section {
 }
 
 .enlaces a:hover {
-  color: #47802b;
+  color: #529e03;
 }
 
 /* Border bottom animado*/
@@ -73,7 +78,7 @@ section {
   content: "";
   height: 2px;
   width: 0%;
-  background-color: #47802b;
+  background-color: #529e03;
   display: block;
   transition: 0.5s ease-in-out;
 }
@@ -82,7 +87,7 @@ section {
   content: "";
   height: 2px;
   width: 100%;
-  background-color: #47802b;
+  background-color: #529e03;
   display: block;
 }
 
@@ -166,9 +171,9 @@ section {
 }
 
 /*Portada*/
-.header {
-  background-image: linear-gradient(to top, #35414200 0%, #00000054 100%),
-    url(../img/portada5.jpg);
+.header-index {
+  background-image: linear-gradient(to top, #191a197e 0%, #00000054 100%),
+    url(../img/portada2.jpg);
   height: 65vh;
   padding: 0.1px;
   background-position: center;
@@ -176,18 +181,11 @@ section {
   background-attachment: fixed;
 }
 
-.contenedor-head {
-  gap: 16px;
-  height: 65vh;
-  width: 420px;
-  text-align: left;
-}
-
 .title-portada {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.623);
 }
@@ -211,7 +209,6 @@ section {
 
 .search-icon {
   right: 20px;
-  color: #000;
   font-size: 1.255rem;
 }
 
@@ -264,36 +261,6 @@ section {
   filter: brightness(0.7); /* Oscurece la imagen */
   transform: translateY(-10px); /* Hace que la imagen salte hacia arriba */
 }
-
-/*
-/*Galería
-.img-gallery {
-  padding: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.gallery {
-  margin: 0;
-  padding: 0;
-  gap: 4px !important;
-}
-
-.overlay {
-  width: 100%;
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  color: white;
-  display: flex;
-  justify-content: center;
-  z-index: 10; /* Asegura que el texto esté sobre la imagen
-  background-color: #000;
-} 
-  */
 
 /*ÚLTIMAS RECETAS*/
 .tarjeta-receta {
@@ -385,135 +352,116 @@ section {
 }
 
 .boton-primario {
-  background-color: #47802b;
+  background-color: #317302;
   color: white;
 }
 
 .boton-secundario {
-  border: 1px solid #47802b;
-  color: #47802b;
+  border: 1px solid #317302;
+  color: #317302;
 }
 
 .boton-primario:hover {
-  background-color: #34641c;
+  background-color: #529e03;
   color: white;
 }
 
 .boton-secundario:hover {
-  background: #47802b;
+  background: #317302;
   color: white;
 }
 
-/* Sección recetas favoritas*/
-.recetas-favoritas {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin: 60px 16px;
-  font-size: 1.25rem;
+.boton-primario,
+.boton-secundario:active {
+  border: none !important;
+  outline: none !important;
+  color: white !important;
+  transform: scale(0.98);
 }
 
-.contenedor-receta {
+.boton-primario:active {
+  background-color: #529e03 !important;
+}
+
+.boton-secundario:active {
+  background-color: #317302 !important;
+}
+
+/*
+/*GALERÍA DE NOVEDADES*/
+.img-gallery {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery {
   margin: 0;
-  display: flex;
-  padding: 16px;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.507);
-  background: #fff;
+  padding: 0;
 }
 
-.title-receta {
-  margin: 20px 40px;
-  font-size: 1.5rem;
-  cursor: pointer;
+.overlay {
+  position: absolute; /* Posiciona el gradiente de manera absoluta */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.726)
+  ); /* Gradiente */
+  z-index: 1; /* Asegura que el gradiente esté por encima de la imagen */
 }
 
-.title-receta a {
-  color: saddlebrown;
+.text-overlay {
+  max-height: 80%;
+  width: 80%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: white;
+  z-index: 10; /* Asegura que el texto esté sobre la imagen*/
 }
 
-.title-receta a:hover {
-  color: black;
+/* SECCIÓN NEWSLETTERS*/
+.newsletter {
+  padding-top: 60px;
+  background-image: url(../img/naranjas.jpg);
 }
 
-.img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 10px;
+.input-newsletter {
+  border-radius: 30px;
+  border: 0.5 solid gray;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
-.parrafo,
-.parrafo1 {
-  margin: 0 40px 40px 40px;
-  font-size: 1.25rem;
-  color: #000;
+.input-newsletter:focus::placeholder {
+  color: transparent;
 }
 
-/* Sección Presentación*/
-/* .presentacion {
-  background-image: url(/img/fondo.jpg);
-  font-size: 1.25rem;
+.input-newsletter:focus {
+  outline: none;
 }
 
-.contenido {
-  display: flex;
-  justify-content: space-between;
-}
-
-.mujer {
-  width: 25%;
-  height: 360px;
-  object-fit: cover;
-  filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.507));
-} */
-
-/* Footer*/
+/* FOOTER*/
 .footer {
   background: #252525;
-  height: 17rem;
+  height: 18rem;
   color: white;
-}
-
-.container-footer {
-  display: flex;
-  justify-content: space-around;
-  padding: 40px 20px;
-  border-bottom: 1px solid white;
-}
-
-.nombre-pagina {
-  display: flex;
-  justify-content: center;
-}
-
-.cont {
-  display: flex;
-  justify-content: space-around;
-}
-
-.contacto,
-.explore,
-.social-media {
-  margin: 0 40px;
+  background-color: #317302;
 }
 
 .explore a {
-  display: block;
   color: white;
 }
 
 /* iconos */
-.social-media {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .social-media-icon {
   display: inline-block;
-  margin-left: 20px;
   width: 40px;
   height: 40px;
   border: 1px solid #fff;
@@ -524,7 +472,7 @@ section {
 
 .social-media-icon:hover {
   background-color: white;
-  color: #000;
+  color: #317302;
 }
 
 .social-media-icon i {
@@ -532,10 +480,8 @@ section {
   line-height: 40px;
 }
 
-.copyright {
-  font-size: 14px;
-  margin-top: 16px;
-  text-align: center;
+.derechos-de-autor {
+  background-color: #1f5201;
 }
 
 /** CONTENIDO DE RECETAS Y CONTACTO*/
