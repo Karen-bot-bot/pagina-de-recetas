@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../src/css/style.css">
+</head>
+
+<body>
+    <!-- Header y navbar -->
+    <header class="header">
+        <nav class="navegador navbar navbar-expand-md d-flex bg-white fixed-top">
+
+            <div class="container-fluid contenedor-nav">
+                <ul class="titulo-pagina p-0">
+                    <li><a class="d-flex navbar-brand" href="../../index.html"><img
+                                src="../../src/img/logo/logo-negro.svg" alt=""></a>
+                    </li>
+                </ul>
+
+                <!-- Sidebar -->
+                <button class="ms-5 d-md-none navbar-toggler border-dark focus-ring focus-ring-dark" id="toggle-btn"
+                    type="button" data-bs-theme="light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+                    aria-controls="offcanvasResponsive"><span class="navbar-toggler-icon"></span></button>
+
+                <div class="sidebar offcanvas-md offcanvas-start" tabindex="-1" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header mt-0 ps-0 m-4">
+                        <a href="../../index.html" class="offcanvas-title" id="offcanvasResponsiveLabel">Delicious!</a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body mt-3 p-0 d-md-none d-flex flex-column">
+                        <div class="side-item"><i class='icon bx bxs-home-alt-2'></i><a class="item"
+                                href="../../index.html">Inicio</a></div>
+                        <div class="side-item">
+                            <i class='icon bx bxs-bowl-hot'></i><a class="item " href="recetas-page=1.html">Recetas</a>
+                        </div>
+                        <div class="side-item"><i class='icon bx bxs-info-circle'></i><a class="item"
+                                href="html/contacto/contacto.html">Quiénes somos</a></div>
+                        <div class="side-item"><i class='icon bx bxs-message'></i><a class="item"
+                                href="html/contacto/contacto.html">Contacto</a></div>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="navb-button"
+                            type="button">Hablemos!</a>
+                    </div>
+
+                    <div class="sociales d-md-none d-flex">
+                        <a target="_blank" href="https://www.youtube.com/"><i class='icono bx bxl-youtube'></i></a>
+                        <a target="_blank" href="https://es-la.facebook.com/"><i class='icono bx bxl-facebook'></i></a>
+                        <a target="_blank" href="https://www.instagram.com/"><i class='icono bx bxl-instagram'></i></a>
+                        <a target="_blank" href="https://twitter.com"><i class='icono bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <ul class="enlaces navbar-nav collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <li>
+                        <a href="../../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="recetas-page=1.html">Recetas</a>
+                    </li>
+                    <li>
+                        <a href="html/">Quiénes somos</a>
+                    </li>
+                    <li>
+                        <a href="html/contacto/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="encabezado-seccion">
+            <div class="container-fluid px-0">
+                <h2 class="text-center text-white">Recetas</h2>
+            </div>
+        </section>
+
+        <section>
+            <!--Filtros y recetas-->
+            <div class="d-flex row">
+                <div class="col-3 pe-3 filtros-de-busqueda">
+                    <div class="mb-3">
+                        <h3 class="title-filtros"> Filtros</h3>
+                    </div>
+                    <div class="my-3">
+                        <form class="position-relative w-100">
+                            <input type="search" class="buscador form-control form-control-lg ps-4 pe-5 w-100"
+                                placeholder="Buscar" aria-label="Search">
+                            <i class="bi bi-search position-absolute top-50 translate-middle-y search-icon">
+                            </i>
+                        </form>
+                    </div>
+
+                    <div>
+                        <h5 class="my-3">Categorías</h5>
+                        <ul class="list-inline">
+                            <li class="d-flex align-items-center gap-2 my-2">
+                                <input class="m-0" type="checkbox" style="width: 16px; height: 16px;">
+                                <label class="m-0">Pastas</label>
+                            </li>
+                            <li class="d-flex align-items-center gap-2 my-2">
+                                <input class="m-0" type="checkbox" style="width: 16px; height: 16px;">
+                                <label class="m-0">Pollo</label>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 my-2">
+                                    <input class="m-0" type="checkbox" style="width: 16px; height: 16px;">
+                                    <label class="m-0">Carnes</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 my-2">
+                                    <input class="m-0" type="checkbox" style="width: 16px; height: 16px;">
+                                    <p class="m-0">Panadería</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 my-2">
+                                    <input class="m-0" type="checkbox" style="width: 16px; height: 16px;">
+                                    <p class="m-0">Vegetariano</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 my-2">
+                                    <input class="m-0" type="checkbox" style="width: 16px; height: 16px;">
+                                    <p class="m-0">Ensaladas</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 my-2">
+                                    <input class="m-0" type="checkbox" style="width: 16px; height: 16px;">
+                                    <p class="m-0">Sopas</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 my-2">
+                                    <input class="m-0" type="checkbox" style="width: 16px; height: 16px;">
+                                    <p class="m-0">Salsas</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 my-2">
+                                    <input class="m-0" type="checkbox" style="width: 16px; height: 16px;">
+                                    <p class="m-0">Postres y dulces</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex my-3 gap-3 justify-content-end">
+                        <button
+                            class="btn btn-link btn-link-secundary fw-bold text-secondary text-decoration-none">Limpiar</button>
+                        <button
+                            class="btn btn-link btn-link-primary fw-bold text-white text-decoration-none">Aplicar</button>
+                    </div>
+                </div>
+
+                <div class="col-9 carousel" id="carousel-recetas">
+                    <div class="carousel-inner">
+                        <!-- Primera página de cards -->
+                        <div class="carousel-item active">
+                            <div class="row justify-content-around ">
+                                <div class="col mb-4 p-0 d-flex justify-content-center">
+                                    <div class="card card-destacada">
+                                        <div class="img-wrapper">
+                                            <img src="../../src/img/sorrentinos.webp" class="d-block w-100"
+                                                alt="Shoyu Ramen">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title mb-0 text-center">Sorrentinos de jamón y queso</h6>
+                                            <div class="iconos-card d-flex justify-content-between">
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-time icon-card'></i>2hr 45m
+                                                </p>
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-restaurant icon-card'></i>Fácil
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col mb-4 p-0 d-flex justify-content-center">
+                                    <div class="card card-destacada">
+                                        <div class="img-wrapper">
+                                            <img src="../../src/img/brownie.jpg" class="d-block w-100" alt="Tiramisú">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title mb-0 text-center">Brownie de chocolate</h6>
+                                            <div class="iconos-card d-flex justify-content-between">
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-time icon-card'></i>30m
+                                                </p>
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-restaurant icon-card'></i>Fácil
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col mb-4 p-0 d-flex justify-content-center">
+                                    <div class="card card-destacada">
+                                        <div class="img-wrapper">
+                                            <img src="../../src/img/empanadas.webp" class="d-block w-100"
+                                                alt="Pastel de papas">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title mb-0 text-center">Empanadas salteñas</h6>
+                                            <div class="iconos-card d-flex justify-content-between">
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-time icon-card'></i>2hr 45m
+                                                </p>
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-restaurant icon-card'></i>Fácil
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col mb-4 p-0 d-flex justify-content-center">
+                                    <div class="card card-destacada">
+                                        <div class="img-wrapper">
+                                            <img src="../../src/img/chicken-teriyaki.jpg" class="d-block w-100"
+                                                alt="Hamburguesa">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title mb-0 text-center">Pollo teriyaki</h6>
+                                            <div class="iconos-card d-flex justify-content-between">
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-time icon-card'></i>2hr 45m
+                                                </p>
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-restaurant icon-card'></i>Fácil
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col mb-4 p-0 d-flex justify-content-center">
+                                    <div class="card card-destacada">
+                                        <div class="img-wrapper">
+                                            <img src="../../src/img/albóndigas.jpg" class="d-block w-100"
+                                                alt="Card title 5">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title mb-0 text-center">Albóndigas en salsa</h6>
+                                            <div class="iconos-card d-flex justify-content-between">
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-time icon-card'></i>2hr 45m
+                                                </p>
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-restaurant icon-card'></i>Fácil
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col mb-4 p-0 d-flex justify-content-center">
+                                    <div class="card card-destacada">
+                                        <div class="img-wrapper">
+                                            <img src="../../src/img/salsa.jpg" class="d-block w-100" alt="Card title 6">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title mb-0 text-center">Salsa de tomates
+                                            </h6>
+                                            <div class="iconos-card d-flex justify-content-between">
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-time icon-card'></i>2hr 45m
+                                                </p>
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-restaurant icon-card'></i>Fácil
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col mb-4 p-0 d-flex justify-content-center">
+                                    <div class="card card-destacada">
+                                        <div class="img-wrapper">
+                                            <img src="../../src/img/tarta-calabaza.webp" class="d-block w-100"
+                                                alt="Card title 7">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title mb-0 text-center">Tarta de calabaza, queso y cebolla
+                                            </h6>
+                                            <div class="iconos-card d-flex justify-content-between">
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-time icon-card'></i>25hr 20m
+                                                </p>
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-restaurant icon-card'></i>Fácil
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col mb-4 p-0 d-flex justify-content-center">
+                                    <div class="card card-destacada">
+                                        <div class="img-wrapper">
+                                            <img src="../../src/img/ensalada-rusa.jpg" class="d-block w-100"
+                                                alt="Card title 8">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title mb-0">Ensalada rusa</h6>
+                                            <div class="iconos-card d-flex justify-content-between">
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-time icon-card'></i>1hr 20min
+                                                </p>
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-restaurant icon-card'></i>Medio
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col mb-4 p-0 d-flex justify-content-center">
+                                    <div class="card card-destacada">
+                                        <div class="img-wrapper">
+                                            <img src="../../src/img/pollo-crema-champiñones.jpg" class="d-block w-100"
+                                                alt="Card title 8">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title mb-0">Pollo con crema y champiñones</h6>
+                                            <div class="iconos-card d-flex justify-content-between">
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-time icon-card'></i>2hr 30min
+                                                </p>
+                                                <p class="d-flex align-items-center text-decoration-none gap-1 mb-0">
+                                                    <i class='bx bx-restaurant icon-card'></i>Medio
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center my-3">
+                        <!-- Flecha izquierda -->
+                        <button class="carousel-control-prev me-2 position-static w-auto opacity-100" type="button"
+                            data-bs-slide="prev">
+                            <span><i class="bi bi-chevron-left"></i></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <!-- Indicadores de página -->
+                        <div
+                            class="carousel-indicators position-static d-flex justify-content-center align-items-center m-0">
+                            <button type="button" aria-current="true" onclick="goToPage(1)" aria-label="Page 1">
+                                1</button>
+                            <button type="button" aria-label="Page 2" class="active" onclick="goToPage(2)">2
+                            </button>
+                            <button type="button" aria-label="Page 3" onclick="goToPage(3)">3
+                            </button>
+                        </div>
+
+                        <!-- Flecha derecha -->
+                        <button class="carousel-control-next ms-2 position-static w-auto opacity-100" type="button"
+                            data-bs-slide="next">
+                            <span><i class="bi bi-chevron-right"></i></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--SUSCRIPCIÓN-->
+        <section class="newsletter" style="height: 80vh;">
+            <div class="container d-flex flex-column my-0 px-0 py-4 mt-4"
+                style="height:50vh; background-color: #F29F05; border-radius: 8px;">
+                <div class="d-flex flex-column m-auto my-3" style="width: 60%;">
+                    <h2 class="my-3 text-center">Suscríbete a nuestro Newsletters</h2>
+                    <p class="text-left">Recibe cada semana nuestras recetas favoritas y tips de cocina que te
+                        harán
+                        disfrutar mucho más cocinar.</p>
+                </div>
+                <div class="d-flex w-80 m-auto gap-3 mt-0" style="width: 60%;;">
+                    <input class="input-newsletter" type="text" placeholder="Correo electrónico">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="#" class="boton-primario text-decoration-none">Suscribirme</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer  -->
+    <footer class="footer">
+        <div
+            class="container-fluid d-flex flex-column align-items-center justify-content-between h-100 w-100 pt-4 px-0">
+            <div class="nombre-pagina">
+                <ul class="titulo-pagina">
+                    <li><a href="../../index.html"><img src="../../src/img/logo/logo-blanco.svg" style="height: 100px;"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="explore d-flex gap-3">
+                <a href="../../index.html">Inicio</a>
+                <a href="recetas-page=1.html">Recetas</a>
+                <a href="/">Quiénes somos</a>
+                <a href="html/contacto/contacto.html">Contacto</a>
+            </div>
+
+            <div class="social-media d-flex gap-3">
+                <a href="https://www.youtube.com/" class="social-media-icon">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+                <a href="https://es-la.facebook.com/" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://twitter.com" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.instagram.com/" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+
+            <div class="derechos-de-autor" style="width: 100%;">
+                <p class="copyright mt-3 text-center" style="font-size: 14px;">©Delicious! - Todos los
+                    derechos
+                    reservados.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+    <script src="../../src/js/carrusel.js"></script>
+</body>
+
+</html>

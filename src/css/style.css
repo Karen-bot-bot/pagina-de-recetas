@@ -484,6 +484,51 @@ section h2 {
   background-color: #1f5201;
 }
 
+/* TODAS LAS RECETAS */
+.encabezado-seccion {
+  padding: 100px 120px 30px 120px;
+  background-color: #317302;
+}
+
+.title-filtros {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600 !important;
+}
+
+.btn-link-primary {
+  background-color: #317302;
+}
+
+.btn-link-secundary,
+.btn-link-primary {
+  border-radius: 30px;
+}
+
+.carousel-indicators button {
+  border: none;
+  margin: 0 8px;
+  padding: 0;
+  background: transparent;
+}
+
+.carousel-indicators button.active {
+  color: #fff;
+  background-color: #317302;
+  border-radius: 50%;
+  font-weight: bold; /* Haz que el número activo se vea más destacado */
+}
+
+.carousel-indicators button,
+.bi-chevron-left,
+.bi-chevron-right {
+  color: #317302;
+  width: 30px;
+  height: 30px;
+  font-size: 1.125rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
 /** CONTENIDO DE RECETAS Y CONTACTO*/
 .header-otros {
   height: 30vh;
@@ -575,51 +620,7 @@ input[type="submit"]:hover {
 }
 
 /** PÁGINA CONTENIDO DE RECETAS*/
-/* Imagenes recetas*/
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 25px;
-  margin: 30px 60px;
-}
-
-.grid-item {
-  border: 1px solid rgba(128, 128, 128, 0.5);
-  background-color: white;
-  border-radius: 10px;
-  margin-top: 20px;
-  position: relative;
-  height: 350px;
-  text-align: center;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
-.imagen {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-}
-
-.grid-item:hover {
-  transform: translateY(-20px);
-  box-shadow: 5px 6px 11px rgba(2, 2, 2, 0.507);
-}
-
-.texto {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  margin-bottom: 20px;
-  color: black;
-  font-size: 1.5rem;
-}
+.btn-
 
 /** RECETARIO */
 .albondigas {
